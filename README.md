@@ -18,4 +18,4 @@ A great deal, and not limited to this list. I'm sure I'll add more as I think of
 
 - Make the start button and recycling bin open up modal windows 
 
-I'm sure I'll be working on this project for quite some time, so this to-do list as well asthe project itself will be a long time in the making. Lots of little green sqares incoming (hopefully! :D).
+I'm sure that I'll be working on this project for quite some time, so this to-do list as well as the project itself will be a long time in the making. Lots of little green sqares incoming (hopefully! :D).
