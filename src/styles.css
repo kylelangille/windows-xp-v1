@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ****************** */
+/* MAIN PAGE ELEMENTS */
+/* ****************** */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+}
+
+.background {
+  /*   width: 100%;
+  height: 100vh;
+  object-fit: cover; */
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* ************* */
+/* DESKTOP ICONS */
+/* ************* */
+.icons {
+  z-index: 2;
+  position: absolute;
+  align-items: flex-start;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  display: grid;
+}
+
+.icon-text {
+  color: #e9eddf;
+}
+
+.recycling-bin-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recycling-bin-img {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ************* */
+/*     TASKBAR   */
+/* ************* */
+
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 3rem;
+  background-color: #245edc;
+  z-index: 1;
+}
+
+/* doesn't work VV */
+/* .taskbar::before {
+    width: 100%;
+    height: 5rem;
+    content: "";
+    background: linear-gradient(#3d77d1, #4494e9, #3d77d1);
+    z-index: 2;
+  } */
+
+.start {
+  background: linear-gradient(180deg, #2c6830, #1c911c);
+  width: 8rem;
+  height: 100%;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  font-size: 1.6rem;
+  color: #e9eddf;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+
+.win-logo {
+  height: 2rem;
+  width: 2rem;
+  background-color: none;
+  position: absolute;
+  left: 0.5rem;
+}
+
+.time {
+  color: #e9eddf;
+  margin-right: 1rem;
+}
+
+.taskbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #0c9dee;
+  width: 10rem;
+}
+
+.sound-icon {
+  height: 2rem;
+  width: 2rem;
+}
