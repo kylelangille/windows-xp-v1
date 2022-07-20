@@ -40,6 +40,7 @@
 
 .icon-text {
   color: #e9eddf;
+  user-select: none;
 }
 
 .recycling-bin-icon {
@@ -67,7 +68,7 @@
   z-index: 1;
 }
 
-/* doesn't work VV */
+/* doesn't work VV -- keeping this code here because I like the linear gradient and will use it later somehow */
 /* .taskbar::before {
     width: 100%;
     height: 5rem;
@@ -88,6 +89,11 @@
   color: #e9eddf;
   font-style: italic;
   font-family: "Roboto", sans-serif;
+  transition: all 0.3s;
+}
+
+.start:hover {
+  background: linear-gradient(#206121, #18851d);
 }
 
 .win-logo {
@@ -101,6 +107,7 @@
 .time {
   color: #e9eddf;
   margin-right: 1rem;
+  user-select: none;
 }
 
 .taskbar-right {
@@ -111,7 +118,76 @@
   width: 10rem;
 }
 
-.sound-icon {
+/* ******************** */
+/*  RECYCLE BIN WINDOW  */
+/* ******************** */
+.recycling-window--hidden {
+  display: none;
+}
+
+.recycling-window {
+  background-color: #0355e7;
+  height: 25rem;
+  width: 20rem;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  position: absolute;
+  left: 25%;
+  top: 5%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.window-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.recycling-bin-img-sm {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  margin-left: 0.7rem;
+}
+
+.window-top-text {
+  color: #fff;
+  margin-left: -2.7rem;
+  margin-top: 0.5rem;
+  align-self: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.window-top-btns {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  border-radius: 9px;
+  border: 1px solid #fff;
   height: 2rem;
   width: 2rem;
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.close-btn {
+  background: linear-gradient(#e6997f, #e13e12);
+}
+
+.min-btn,
+.max-btn {
+  background: linear-gradient(#5986f5, #0c63f0);
+}
+
+.window-main {
+  height: 21.5rem;
+  width: 19rem;
+  background-color: #fff;
+  margin: auto;
 }
