@@ -1,9 +1,10 @@
-//Time
+"use strict";
+
+//Time in Taskbar
 function currentTime() {
   let date = new Date();
   let hours = date.getHours();
   let mins = date.getMinutes();
-  let secs = date.getSeconds();
   let session = "AM";
 
   if (hours == 0) {
@@ -16,7 +17,6 @@ function currentTime() {
 
   hours = hours < 10 ? "0" + hours : hours;
   mins = mins < 10 ? "0" + mins : mins;
-  secs = secs < 10 ? "0" + secs : secs;
 
   let time = hours + ":" + mins + " " + session;
 
@@ -26,3 +26,21 @@ function currentTime() {
   }, 1000);
 }
 currentTime();
+
+//Opening and Closing the Recycling Bin
+const recyclingBinWindow = document.querySelector(".recycling-window");
+const btnCloseRecyclingBin = document.querySelector(
+  ".recycling-window--hidden"
+);
+const btnOpenRecyclingBin = document.querySelector(".recycling-window--open");
+
+const openRecyclingBin = function () {
+  recyclingBinWindow.classList.remove("recycling-window--hidden");
+};
+
+const closeRecyclingBin = function () {
+  recyclingBinWindow.classList.add("recycling-window--hidden");
+};
+
+btnCloseRecyclingBin.addEventListener("click", closeRecyclingBin);
+btnOpenRecyclingBin.addEventListener("dblclick", openRecyclingBin);
