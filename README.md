@@ -10,12 +10,12 @@ A great deal, and not limited to this list. I'm sure I'll add more as I think of
 
 - Develop a more robust "style guide" so I'm not thoughtlessly just slapping in random rem values until components look "somewhat okay"
 
-- Add hover transition effect on start button
-
 - Add borders on the taskbar
 
-- Make the recycling bin icon function like a button
+- Add hover effects to buttons in recycling bin modal window
 
-- Make the start button and recycling bin open up modal windows 
+- Make the start button open up modal window
+
+- Make it responsive (herculean task!)
 
 I'm sure that I'll be working on this project for quite some time, so this to-do list as well as the project itself will be a long time in the making. Lots of little green sqares incoming (hopefully! :D).
