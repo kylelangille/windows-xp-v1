@@ -1,6 +1,7 @@
 "use strict";
-
-//Time in Taskbar
+/////////////////////////////////////////////////////////
+// TASKBAR
+// Time in Taskbar
 function currentTime() {
   let date = new Date();
   let hours = date.getHours();
@@ -44,3 +45,35 @@ const closeRecyclingBin = function () {
 
 btnCloseRecyclingBin.addEventListener("click", closeRecyclingBin);
 btnOpenRecyclingBin.addEventListener("dblclick", openRecyclingBin);
+
+/////////////////////////////////////////////////////////
+// START MENU
+// Opening and Closing Start Menu
+const startMenu = document.querySelector(".start-menu");
+const startMenuBtn = document.querySelector(".start-btn");
+
+const openStartMenu = function () {
+  startMenu.classList.remove("start-menu--hidden");
+};
+
+const closeStartMenu = function () {
+  startMenu.classList.add("start-menu--hidden");
+};
+
+startMenuBtn.addEventListener("click", function () {
+  if (startMenu.classList.contains("start-menu--hidden")) {
+    openStartMenu();
+  } else if (!startMenu.classList.contains("start-menu--hidden")) {
+    closeStartMenu();
+  }
+});
+
+// Escape Key Closing the Start Menu
+document.addEventListener("keydown", function (e) {
+  if (
+    e.key === "Escape" &&
+    !startMenu.classList.contains("start-menu--hidden")
+  ) {
+    closeStartMenu();
+  }
+});
