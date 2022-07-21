@@ -14,8 +14,10 @@ A great deal, and not limited to this list. I'm sure I'll add more as I think of
 
 - Add hover effects to buttons in recycling bin modal window
 
-- Make the start button open up modal window
+- Make the start button close when clicking outside of it (except taskbar)
 
 - Make it responsive (herculean task!)
+
+-Add more "functioning" desktop icons
 
 I'm sure that I'll be working on this project for quite some time, so this to-do list as well as the project itself will be a long time in the making. Lots of little green sqares incoming (hopefully! :D).
