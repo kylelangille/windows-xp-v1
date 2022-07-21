@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="src/styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="src/styles/start-menu.css" />
     <title>Windows XP</title>
   </head>
   <body>
@@ -46,8 +48,153 @@
         </div>
         <div class="window-main"></div>
       </div>
+      <div class="start-menu start-menu--hidden">
+        <div class="start-menu-top">
+          <img
+            class="profile-img"
+            src="images/start-menu/chess-profile-img.jpg"
+          />
+          <p class="username-text">User</p>
+        </div>
+        <div class="start-menu-main">
+          <div class="start-menu-main-left">
+            <div class="menu-left-cell1 left-cell">
+              <img
+                class="ie-icon menu-icon"
+                src="images/start-menu/ie-icon.png"
+              />Internet
+            </div>
+            <div class="menu-left-cell2 left-cell">
+              <img
+                class="email-icon menu-icon"
+                src="images/start-menu/email-icon.png"
+              />E-mail
+            </div>
+            <div class="menu-left-cell3 left-cell">
+              <img
+                class="commandprompt-icon menu-icon"
+                src="images/start-menu/command-prompt-icon.png"
+              />Command Prompt
+            </div>
+            <div class="menu-left-cell4 left-cell">
+              <img
+                class="msn-icon menu-icon"
+                src="images/start-menu/msn-icon.png"
+              />MSN
+            </div>
+            <div class="menu-left-cell5 left-cell">
+              <img
+                class="media-player-icon menu-icon"
+                src="images/start-menu/media-player-icon.png"
+              />Windows Media Player
+            </div>
+            <div class="menu-left-cell6 left-cell">
+              <img
+                class="messenger-icon menu-icon"
+                src="images/start-menu/messenger-icon.png"
+              />Microsoft Messenger
+            </div>
+            <div class="menu-left-cell7 left-cell">
+              <img
+                class="notepad-icon menu-icon"
+                src="images/start-menu/notepad-icon.png"
+              />Notepad
+            </div>
+            <div class="menu-left-cell8 left-cell">
+              <img
+                class="wmm-icon menu-icon"
+                src="images/start-menu/wmm-icon.png"
+              />Windows Movie Maker
+            </div>
+            <div class="menu-left-cell9 left-cell">
+              All Programs
+              <ion-icon class="icon green-arrow" name="play"></ion-icon>
+            </div>
+          </div>
+          <div class="start-menu-main-right">
+            <div class="menu-right-cell1 right-cell">
+              <img
+                class="my-docs menu-icon-sm"
+                src="images/start-menu/my-docs-icon.png"
+              />My Documents
+            </div>
+            <div class="menu-right-cell2 right-cell">
+              <img
+                class="recent-docs menu-icon-sm"
+                src="images/start-menu/recent-docs-icon.png"
+              />My Recent Documents
+            </div>
+            <div class="menu-right-cell3 right-cell">
+              <img
+                class="my-pics menu-icon-sm"
+                src="images/start-menu/my-pics-icon.png"
+              />My Pictures
+            </div>
+            <div class="menu-right-cell4 right-cell">
+              <img
+                class="my-music menu-icon-sm"
+                src="images/start-menu/my-music-icon.png"
+              />My Music
+            </div>
+            <div class="menu-right-cell5 right-cell">
+              <img
+                class="my-computer menu-icon-sm"
+                src="images/start-menu/my-computer-icon.png"
+              />My Computer
+            </div>
+            <div class="menu-right-cell6 right-cell">
+              <img
+                class="ctrl-panel menu-icon-sm"
+                src="images/start-menu/ctrl-panel-icon.png"
+              />Control Panel
+            </div>
+            <div class="menu-right-cell7 right-cell">
+              <img
+                class="set-default menu-icon-sm"
+                src="images/start-menu/default-programs-icon.png"
+              />Set Program Access and Defaults
+            </div>
+            <div class="menu-right-cell8 right-cell">
+              <img
+                class="printer menu-icon-sm"
+                src="images/start-menu/printer-icon.png"
+              />Printers and Faxes
+            </div>
+            <div class="menu-right-cell9 right-cell">
+              <img
+                class="help-icon menu-icon-sm"
+                src="images/start-menu/help-icon.png"
+              />Help and Support
+            </div>
+            <div class="menu-right-cell10 right-cell">
+              <img
+                class="search-icon menu-icon-sm"
+                src="images/start-menu/search-icon.png"
+              />Search
+            </div>
+            <div class="menu-right-cell11 right-cell">
+              <img
+                class="run-icon menu-icon-sm"
+                src="images/start-menu/run-icon.png"
+              />Run...
+            </div>
+          </div>
+        </div>
+        <div class="start-menu-bottom">
+          <div class="bottom-icons">
+            <div class="log-off">
+              <ion-icon class="log-off-icon" name="key-outline"></ion-icon>
+              <p class="log-off-text">Log Off</p>
+            </div>
+            <div class="turn-off">
+              <ion-icon class="turn-off-icon" name="power-outline"></ion-icon>
+              <p class="turn-off-text">Turn Off Computer</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="taskbar">
-        <button class="start">
+        <button class="start start-btn">
           <img
             class="win-logo"
             src="https://findicons.com/files/icons/2075/windows_system_logo/256/windows_xp.png"
@@ -59,5 +206,13 @@
       </div>
     </div>
     <script defer src="src/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
