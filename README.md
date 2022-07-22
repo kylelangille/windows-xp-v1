@@ -18,6 +18,6 @@ A great deal, and not limited to this list. I'm sure I'll add more as I think of
 
 - Make it responsive (herculean task!)
 
--Add more "functioning" desktop icons
+- Add more "functioning" desktop icons
 
 I'm sure that I'll be working on this project for quite some time, so this to-do list as well as the project itself will be a long time in the making. Lots of little green sqares incoming (hopefully! :D).
