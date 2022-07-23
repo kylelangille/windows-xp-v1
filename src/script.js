@@ -61,11 +61,9 @@ const closeStartMenu = function () {
 };
 
 startMenuBtn.addEventListener("click", function () {
-  if (startMenu.classList.contains("start-menu--hidden")) {
-    openStartMenu();
-  } else if (!startMenu.classList.contains("start-menu--hidden")) {
-    closeStartMenu();
-  }
+  startMenu.classList.contains("start-menu--hidden")
+    ? openStartMenu()
+    : closeStartMenu();
 });
 
 // Escape Key Closing the Start Menu
