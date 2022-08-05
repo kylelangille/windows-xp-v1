@@ -1,8 +1,66 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+
+
+--- 02 COLORS
+
+- Primary: 
+- Tints:
+
+
+- Shades: 
+
+
+- Accents:
+
+- Greys
+
+
+--- 05 SHADOWS
+
+
+
+--- 06 BORDER-RADIUS
+
+Default: 4px
+Medium: 11px
+High: 15px (start button)
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: url(/images/background.jpg);
+  background-size: cover;
 }
 
 /* ****************** */
@@ -33,14 +91,15 @@
   z-index: 2;
   position: absolute;
   align-items: flex-start;
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
   display: grid;
 }
 
 .icon-text {
   color: #e9eddf;
   user-select: none;
+  font-size: 1.6rem;
 }
 
 .recycling-bin-icon {
@@ -50,9 +109,9 @@
 }
 
 .recycling-bin-img {
-  height: 3rem;
-  width: 3rem;
-  margin-bottom: 0.5rem;
+  height: 4.4rem;
+  width: 4.4rem;
+  margin-bottom: 1rem;
 }
 
 /* ************* */
@@ -63,9 +122,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 3rem;
+  height: 5.2rem;
   background-color: #245edc;
   z-index: 1;
+  position: fixed;
+  bottom: 0;
 }
 
 /* doesn't work VV -- keeping this code here because I like the linear gradient and will use it later somehow */
@@ -79,13 +140,13 @@
 
 .start {
   background: linear-gradient(180deg, #2c6830, #1c911c);
-  width: 8rem;
+  width: 13.8rem;
   height: 100%;
   border: none;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   color: #e9eddf;
   font-style: italic;
   font-family: "Roboto", sans-serif;
@@ -97,17 +158,18 @@
 }
 
 .win-logo {
-  height: 2rem;
-  width: 2rem;
+  height: 2.4rem;
+  width: 2.4rem;
   background-color: none;
   position: absolute;
-  left: 0.5rem;
+  left: 1rem;
 }
 
 .time {
   color: #e9eddf;
   margin-right: 1rem;
   user-select: none;
+  font-size: 1.6rem;
 }
 
 .taskbar-right {
@@ -127,8 +189,8 @@
 
 .recycling-window {
   background-color: #0355e7;
-  height: 25rem;
-  width: 20rem;
+  height: 30rem;
+  width: 30rem;
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
   position: absolute;
@@ -140,42 +202,47 @@
 .window-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .recycling-bin-img-sm {
-  width: 2rem;
-  height: 2rem;
-  margin-top: 0.5rem;
-  margin-left: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 .window-top-text {
   color: #fff;
-  margin-left: -2.7rem;
-  margin-top: 0.5rem;
+  margin-left: -5.4rem;
+  margin-top: 1rem;
   align-self: center;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   font-weight: 400;
   user-select: none;
 }
 
 .window-top-btns {
   display: flex;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 .btn {
-  border-radius: 9px;
+  border-radius: 4px;
   border: 1px solid #fff;
-  height: 2rem;
-  width: 2rem;
-  margin-right: 0.5rem;
+  height: 3rem;
+  width: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   user-select: none;
+  margin-right: 0.2rem;
+}
+
+.btn:last-child {
+  margin-right: -0.2rem;
 }
 
 .close-btn {
@@ -197,8 +264,8 @@
 }
 
 .window-main {
-  height: 21.5rem;
-  width: 19rem;
+  height: 24.3rem;
+  width: 29rem;
   background-color: #fff;
   margin: auto;
 }
