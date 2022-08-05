@@ -1,6 +1,6 @@
 .start-menu {
-  height: 29rem;
-  width: 25rem;
+  height: 46rem;
+  width: 38rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,8 +15,8 @@
 
 .start-menu-top {
   background: linear-gradient(#0b60cb, #3e89e6);
-  height: 5rem;
-  width: 25rem;
+  height: 6rem;
+  width: 38rem;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   display: flex;
@@ -34,7 +34,7 @@
   color: #fff;
   align-self: center;
   margin-left: 0.8rem;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 /* ******************** */
@@ -65,15 +65,19 @@
 }
 
 .left-cell {
-  height: 2.2rem;
+  height: 3.7rem;
   display: flex;
   align-items: center;
+  font-size: 1.4rem;
+  margin-left: 1rem;
 }
 
 .right-cell {
-  height: 1.8rem;
+  height: 3.1rem;
   display: flex;
   align-items: center;
+  font-size: 1.4rem;
+  margin-left: 1rem;
 }
 
 .menu-left-cell3,
@@ -108,8 +112,8 @@
 
 .start-menu-bottom {
   background: linear-gradient(#3783e4, #245edc);
-  height: 4.2rem;
-  width: 25rem;
+  height: 7rem;
+  width: 38rem;
 }
 
 .bottom-icons {
@@ -145,6 +149,7 @@
 .log-off-text,
 .turn-off-text {
   color: #fff;
+  font-size: 1.4rem;
 }
 
 .log-off-icon,
