@@ -138,14 +138,17 @@ body {
 }
 
 .start {
-  background: linear-gradient(180deg, #2c6830, #1c911c);
+  /* background: linear-gradient(180deg, #2c6830, #1c911c); */
+  background: linear-gradient(180deg, #258522, #197f1c, #158b14, #2c8431);
+  backdrop-filter: blur(10px);
   width: 13.8rem;
   height: 100%;
   border: none;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   position: relative;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
+  text-shadow: 1px 1px #000;
   color: #e9eddf;
   font-style: italic;
   font-family: "Roboto", sans-serif;
@@ -162,6 +165,7 @@ body {
   background-color: none;
   position: absolute;
   left: 1rem;
+  margin-top: 0.4rem;
 }
 
 .time {
@@ -175,8 +179,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #0c9dee;
+  /* background-color: #0c9dee; */
+  background: linear-gradient(
+    #28b3ff 0% 5%,
+    #15a1f2 5% 7%,
+    #0c97eb 7% 10%,
+    #0c9dee 10% 12%,
+    #1690eb 12% 95%,
+    #1690eb 95% 100%
+  );
   width: 10rem;
+  text-shadow: 1px 1px #333;
 }
 
 /* ******************** */
