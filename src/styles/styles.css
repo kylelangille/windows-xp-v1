@@ -123,20 +123,19 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 5.2rem;
-  background-color: #245edc;
+  background: linear-gradient(
+    #3770af 0 1%,
+    #3c83e7 1% 3%,
+    #4b94f3 3% 5%,
+    #4b94f5 5% 7%,
+    #215ed5 7% 95%,
+    #1d50c2 95% 97%,
+    #1144b1 97% 100%
+  );
   z-index: 1;
   position: fixed;
   bottom: 0;
 }
-
-/* doesn't work VV -- keeping this code here because I like the linear gradient and will use it later somehow */
-/* .taskbar::before {
-    width: 100%;
-    height: 5rem;
-    content: "";
-    background: linear-gradient(#3d77d1, #4494e9, #3d77d1);
-    z-index: 2;
-  } */
 
 .start {
   background: linear-gradient(180deg, #2c6830, #1c911c);
