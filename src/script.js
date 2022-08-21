@@ -75,3 +75,19 @@ document.addEventListener("keydown", function (e) {
     closeStartMenu();
   }
 });
+
+//Opening and closing the calculator
+const openCalcBtn = document.querySelector(".open-calc-btn");
+const closeCalcBtn = document.querySelector(".calc-window--hidden");
+const calcWindow = document.querySelector(".calc-window");
+
+const openCalc = function () {
+  calcWindow.classList.remove("calc--hidden");
+};
+
+const closeCalc = function () {
+  calcWindow.classList.add("calc--hidden");
+};
+
+openCalcBtn.addEventListener("click", openCalc);
+closeCalcBtn.addEventListener("click", closeCalc);
