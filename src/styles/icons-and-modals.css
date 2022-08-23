@@ -1,0 +1,269 @@
+/* ************* */
+/* DESKTOP ICONS */
+/* ************* */
+.icons {
+  z-index: 2;
+  position: absolute;
+  align-items: flex-start;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  display: grid;
+}
+
+.icon-text {
+  color: #e9eddf;
+  user-select: none;
+  font-size: 1.6rem;
+}
+
+.recycling-bin-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+.recycling-bin-img {
+  height: 4.4rem;
+  width: 4.4rem;
+  margin-bottom: 1rem;
+}
+
+/* ******************** */
+/*  RECYCLE BIN WINDOW  */
+/* ******************** */
+.recycling-window--hidden {
+  display: none;
+}
+
+.recycling-window {
+  background-color: #0355e7;
+  height: 30rem;
+  width: 30rem;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  position: absolute;
+  left: 25%;
+  top: 5%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.window-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.recycling-bin-img-sm {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.window-top-text {
+  color: #fff;
+  margin-left: -5.4rem;
+  margin-top: 1rem;
+  align-self: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  user-select: none;
+}
+
+.window-top-btns {
+  display: flex;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.btn {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  user-select: none;
+  margin-right: 0.2rem;
+}
+
+.btn:last-child {
+  margin-right: -0.2rem;
+}
+
+.close-btn {
+  background: linear-gradient(#e6997f, #e13e12);
+}
+
+.close-btn:hover {
+  background: linear-gradient(#d37c70, #dc482f);
+}
+
+.min-btn,
+.max-btn {
+  background: linear-gradient(#5986f5, #0c63f0);
+}
+
+.min-btn:hover,
+.max-btn:hover {
+  background: linear-gradient(#6a92f6, #2473f2);
+}
+
+.window-main {
+  height: 24.3rem;
+  width: 29rem;
+  background-color: #fff;
+  margin: auto;
+}
+
+/* ******************** */
+/*    LIMEWIRE WINDOW   */
+/* ******************** */
+
+/* .limewire-window--hidden {
+  display: none;
+} */
+
+.limewire-window {
+  background-color: #0355e7;
+  height: 48.75rem;
+  width: 56.87rem;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+}
+
+.limewire-window--top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.3rem;
+}
+
+.limewire-window--top-text {
+  color: #fff;
+  margin-left: 1.625rem;
+  margin-top: 1.625rem;
+  font-size: 1.7rem;
+}
+
+.window-top-btns {
+  display: flex;
+  margin-top: 0.8rem;
+  font-size: 2.2rem;
+}
+
+.close-btn {
+  background: linear-gradient(#e6997f, #e13e12);
+}
+
+.min-btn,
+.max-btn {
+  background: linear-gradient(#5986f5, #0c63f0);
+}
+
+.limewire-window--main {
+  height: 42.25rem;
+  width: 55.25rem;
+  background-color: #fff;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 19.5rem 1fr;
+  grid-template-rows: 35.75rem 1fr;
+}
+
+.limewire-window--right h2 {
+  margin-top: 1.2rem;
+  margin-bottom: 5.6rem;
+  font-size: 2.8rem;
+}
+
+.limewire-main--text {
+  font-size: 1.6rem;
+  width: 30rem;
+}
+
+.limewire-window--left {
+  height: 100%;
+  background: linear-gradient(#5cbe51, #bae3b7);
+  display: flex;
+  flex-direction: column;
+}
+
+.limewire-window--right {
+  height: 100%;
+  margin-left: 3.25rem;
+}
+
+.limewire-window--bottom {
+  background-color: #ece9d8;
+  height: 6.5rem;
+  width: 100%;
+  grid-column: span 2;
+  border-top: 1px solid #dfd8d1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.next-btn,
+.cancel-btn {
+  height: 2.43rem;
+  width: 8.125rem;
+  margin-right: 1.625rem;
+  font-size: 1.2rem;
+}
+
+.text-bigger {
+  font-size: 1.2rem;
+}
+
+.next-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-btn:hover,
+.cancel-btn:hover {
+  border: 2px inset #678dab;
+  border-radius: 3px;
+}
+
+.limewire-logo--main1 {
+  height: 3.25rem;
+  width: 3.25rem;
+  margin-left: 4.875rem;
+  filter: blur(1px);
+}
+
+.limewire-logo--main2 {
+  height: 4.875rem;
+  width: 4.875rem;
+  margin-left: 2.84rem;
+  filter: blur(1px);
+}
+
+.limewire-logo--main3 {
+  height: 6.5rem;
+  width: 6.5rem;
+  margin-left: 1.625rem;
+  filter: blur(1px);
+}
+
+.limewire-logo--main4 {
+  height: 8.125rem;
+  width: 8.125rem;
+  margin-left: 1.625rem;
+  filter: blur(1px);
+}
+
+.limewire-logo--main5 {
+  height: 9.75rem;
+  width: 9.75rem;
+  margin-left: 3.25rem;
+}
