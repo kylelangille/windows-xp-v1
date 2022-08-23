@@ -31,7 +31,7 @@ currentTime();
 //Opening and Closing the Recycling Bin
 const recyclingBinWindow = document.querySelector(".recycling-window");
 const btnCloseRecyclingBin = document.querySelector(
-  ".recycling-window--hidden"
+  ".close-btn--recycling-bin"
 );
 const btnOpenRecyclingBin = document.querySelector(".recycling-window--open");
 
@@ -76,6 +76,7 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+////////////////////////////////////
 //Opening and closing the calculator
 const openCalcBtn = document.querySelector(".open-calc-btn");
 const closeCalcBtn = document.querySelector(".calc-window--hidden");
