@@ -18,8 +18,6 @@ A great deal, and not limited to this list. I'm sure I'll add more as I think of
 
 - Develop a more robust "style guide" so I'm not thoughtlessly just slapping in random rem values until components look "somewhat okay"
 
-- Add hover effects to buttons in recycling bin modal window
-
 - Make the start button close when clicking outside of it (except taskbar)
 
 - Make it responsive (herculean task!)
