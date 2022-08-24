@@ -181,6 +181,8 @@
   background: linear-gradient(#5986f5, #0c63f0);
 }
 
+/* LimeWire */
+
 .limewire-window--main {
   height: 42.25rem;
   width: 55.25rem;
@@ -189,6 +191,7 @@
   display: grid;
   grid-template-columns: 19.5rem 1fr;
   grid-template-rows: 35.75rem 1fr;
+  z-index: -1;
 }
 
 .limewire-window--right h2 {
