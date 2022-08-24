@@ -28,7 +28,9 @@ function currentTime() {
 }
 currentTime();
 
-//Opening and Closing the Recycling Bin
+///////////////////////////////////////////////////////
+// DESKTOP ICONS
+// Opening and Closing the Recycling Bin
 const recyclingBinWindow = document.querySelector(".recycling-window");
 const btnCloseRecyclingBin = document.querySelector(
   ".close-btn--recycling-bin"
@@ -46,7 +48,8 @@ const closeRecyclingBin = function () {
 btnCloseRecyclingBin.addEventListener("click", closeRecyclingBin);
 btnOpenRecyclingBin.addEventListener("dblclick", openRecyclingBin);
 
-//Opening and Closing LimeWire
+//////////////////////////////////////
+// Opening and Closing LimeWire
 const limewireWindow = document.querySelector(".limewire-window");
 const btnCloseLimewire = document.querySelector(".close-limewire");
 const btnOpenLimeWire = document.querySelector(".limewire-icon--open");
@@ -93,7 +96,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 ////////////////////////////////////
-//Opening and closing the calculator
+// Opening and closing the calculator
 const openCalcBtn = document.querySelector(".open-calc-btn");
 const closeCalcBtn = document.querySelector(".calc-window--hidden");
 const calcWindow = document.querySelector(".calc-window");
