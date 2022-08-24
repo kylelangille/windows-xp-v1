@@ -70,13 +70,16 @@ btnCloseLimewire.addEventListener("click", closeLimewire);
 // Opening and Closing Start Menu
 const startMenu = document.querySelector(".start-menu");
 const startMenuBtn = document.querySelector(".start-btn");
+const overlay = document.querySelector(".overlay");
 
 const openStartMenu = function () {
   startMenu.classList.remove("start-menu--hidden");
+  overlay.classList.remove("overlay--hidden");
 };
 
 const closeStartMenu = function () {
   startMenu.classList.add("start-menu--hidden");
+  overlay.classList.remove("overlay--hidden");
 };
 
 startMenuBtn.addEventListener("click", function () {
@@ -84,6 +87,8 @@ startMenuBtn.addEventListener("click", function () {
     ? openStartMenu()
     : closeStartMenu();
 });
+
+overlay.addEventListener("click", closeStartMenu);
 
 // Escape Key Closing the Start Menu
 document.addEventListener("keydown", function (e) {
