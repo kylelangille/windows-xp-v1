@@ -8,6 +8,8 @@
   margin-left: 2rem;
   margin-top: 2rem;
   display: grid;
+  grid-template-columns: repeat(2 1fr);
+  row-gap: 2rem;
 }
 
 .icon-text {
@@ -24,6 +26,19 @@
 }
 
 .recycling-bin-img {
+  height: 4.4rem;
+  width: 4.4rem;
+  margin-bottom: 1rem;
+}
+
+.limewire-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+.limewire-img {
   height: 4.4rem;
   width: 4.4rem;
   margin-bottom: 1rem;
@@ -123,9 +138,9 @@
 /*    LIMEWIRE WINDOW   */
 /* ******************** */
 
-/* .limewire-window--hidden {
+.limewire-window--hidden {
   display: none;
-} */
+}
 
 .limewire-window {
   background-color: #0355e7;
@@ -201,7 +216,7 @@
 
 .limewire-window--bottom {
   background-color: #ece9d8;
-  height: 6.5rem;
+  height: 7.2rem;
   width: 100%;
   grid-column: span 2;
   border-top: 1px solid #dfd8d1;
@@ -230,8 +245,9 @@
 
 .next-btn:hover,
 .cancel-btn:hover {
-  border: 2px inset #678dab;
+  border: 1px inset #678dab;
   border-radius: 3px;
+  background-color: #d6d6ec;
 }
 
 .limewire-logo--main1 {

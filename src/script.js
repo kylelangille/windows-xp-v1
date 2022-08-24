@@ -46,6 +46,22 @@ const closeRecyclingBin = function () {
 btnCloseRecyclingBin.addEventListener("click", closeRecyclingBin);
 btnOpenRecyclingBin.addEventListener("dblclick", openRecyclingBin);
 
+//Opening and Closing LimeWire
+const limewireWindow = document.querySelector(".limewire-window");
+const btnCloseLimewire = document.querySelector(".close-limewire");
+const btnOpenLimeWire = document.querySelector(".limewire-icon--open");
+
+const openLimewire = function () {
+  limewireWindow.classList.remove("limewire-window--hidden");
+};
+
+const closeLimewire = function () {
+  limewireWindow.classList.add("limewire-window--hidden");
+};
+
+btnOpenLimeWire.addEventListener("dblclick", openLimewire);
+btnCloseLimewire.addEventListener("click", closeLimewire);
+
 /////////////////////////////////////////////////////////
 // START MENU
 // Opening and Closing Start Menu

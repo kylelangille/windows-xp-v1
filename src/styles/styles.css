@@ -28,7 +28,7 @@ Large: 1.8
 
 - Accents:
 
-- Greys
+- Greys:
 
 
 --- 05 SHADOWS
@@ -36,8 +36,8 @@ Large: 1.8
 
 
 --- 06 BORDER-RADIUS
-
 Default: 4px
+Window top lefts and rights: 9px
 Medium: 11px
 High: 15px (start button)
 
@@ -108,7 +108,6 @@ body {
 }
 
 .start {
-  /* background: linear-gradient(180deg, #2c6830, #1c911c); */
   background: linear-gradient(180deg, #258522, #197f1c, #158b14, #2c8431);
   backdrop-filter: blur(10px);
   width: 13.8rem;
@@ -149,7 +148,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  /* background-color: #0c9dee; */
   background: linear-gradient(
     #28b3ff 0% 5%,
     #15a1f2 5% 7%,
