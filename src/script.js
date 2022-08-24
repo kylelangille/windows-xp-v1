@@ -75,11 +75,13 @@ const overlay = document.querySelector(".overlay");
 const openStartMenu = function () {
   startMenu.classList.remove("start-menu--hidden");
   overlay.classList.remove("overlay--hidden");
+  overlay.classList.add("overlay");
 };
 
 const closeStartMenu = function () {
   startMenu.classList.add("start-menu--hidden");
   overlay.classList.remove("overlay--hidden");
+  overlay.classList.remove("overlay");
 };
 
 startMenuBtn.addEventListener("click", function () {

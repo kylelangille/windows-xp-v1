@@ -191,7 +191,7 @@
   display: grid;
   grid-template-columns: 19.5rem 1fr;
   grid-template-rows: 35.75rem 1fr;
-  z-index: -1;
+  z-index: 1;
 }
 
 .limewire-window--right h2 {
