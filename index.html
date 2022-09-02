@@ -113,6 +113,103 @@
           </div>
         </div>
       </div>
+
+      <div class="messenger--hidden messenger-window">
+        <div class="messenger-window--top">
+          <div class="messenger-window--top-left">
+            <img
+              class="messenger-window--icon"
+              src="images/start-menu/messenger-icon.png"
+            />
+            <p>MSN Messenger</p>
+          </div>
+          <div class="messenger-window--top-right">
+            <button class="min-btn btn">_</button>
+            <button class="max-btn btn">❐</button>
+            <button class="close-btn btn messenger-window--hidden">✖</button>
+          </div>
+        </div>
+        <div class="messenger-window--main">
+          <img
+            class="messenger-icon-main--top"
+            src="images/other-assets/messenger-icon-main.png"
+          />
+          <form class="messenger-sign-in">
+            <label for="email" class="messenger-email-label"
+              >E-mail address:</label
+            >
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              class="messenger-email--input"
+            />
+            <label for="password" class="messenger-password-label"
+              >Password:</label
+            >
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              class="messenger-password-input"
+            />
+            <div class="messenger-status">
+              <label for="status" class="messenger-status-label">Status:</label>
+              <select name="status" class="messenger-sign-in--options">
+                <option value="online">Online</option>
+                <option value="busy">Busy</option>
+                <option value="brb">Be right back</option>
+                <option value="away">Away</option>
+                <option value="iac">In a call</option>
+                <option value="otl">Out to lunch</option>
+                <option value="offline">Appear offline</option>
+              </select>
+            </div>
+          </form>
+          <form class="messenger-sign-in-checkboxes">
+            <div class="option-wrapper">
+              <input type="checkbox" name="rememberme" value="rememberme" />
+              <label for="rememberme">Remember Me</label
+              ><a href="#">Forget Me</a>
+            </div>
+            <div class="option-wrapper">
+              <input type="checkbox" name="rememberpass" value="remeberpass" />
+              <label for="rememberpass">Remember my Password</label>
+            </div>
+            <div class="option-wrapper">
+              <input type="checkbox" name="auto" value="auto" />
+              <label for="auto">Sign me in automatically</label>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="notepad--hidden notepad-window">
+        <div class="notepad-window--top">
+          <div class="notepad-window--top-left">
+            <img
+              class="notepad-window--icon"
+              src="images/start-menu/notepad-icon.png"
+            />
+            <p>Notepad</p>
+          </div>
+          <div class="notepad-window--top-right">
+            <button class="min-btn btn">_</button>
+            <button class="max-btn btn">❐</button>
+            <button class="close-btn btn notepad-window--hidden">✖</button>
+          </div>
+        </div>
+        <div class="notepad-window--main">
+          <div class="notepad-window--main-top">
+            <a class="notepad-top--links" href="#">File</a>
+            <a class="notepad-top--links" href="#">Edit</a>
+            <a class="notepad-top--links" href="#">Format</a>
+            <a class="notepad-top--links" href="#">View</a>
+            <a class="notepad-top--links" href="#">Help</a>
+          </div>
+          <textarea></textarea>
+        </div>
+      </div>
       <div class="calc--hidden calc-window">
         <div class="calc-window-top">
           <div class="calc-window-top-left">
@@ -175,32 +272,7 @@
           </div>
         </div>
       </div>
-      <div class="notepad--hidden notepad-window">
-        <div class="notepad-window--top">
-          <div class="notepad-window--top-left">
-            <img
-              class="notepad-window--icon"
-              src="images/start-menu/notepad-icon.png"
-            />
-            <p>Notepad</p>
-          </div>
-          <div class="notepad-window--top-right">
-            <button class="min-btn btn">_</button>
-            <button class="max-btn btn">❐</button>
-            <button class="close-btn btn notepad-window--hidden">✖</button>
-          </div>
-        </div>
-        <div class="notepad-window--main">
-          <div class="notepad-window--main-top">
-            <a class="notepad-top--links" href="#">File</a>
-            <a class="notepad-top--links" href="#">Edit</a>
-            <a class="notepad-top--links" href="#">Format</a>
-            <a class="notepad-top--links" href="#">View</a>
-            <a class="notepad-top--links" href="#">Help</a>
-          </div>
-          <textarea></textarea>
-        </div>
-      </div>
+
       <div class="start-menu start-menu--hidden">
         <div class="start-menu-top">
           <img
