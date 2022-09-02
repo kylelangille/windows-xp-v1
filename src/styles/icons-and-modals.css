@@ -1,7 +1,7 @@
 /* ************* */
 /* DESKTOP ICONS */
 /* ************* */
-.icons {
+.desktop-icons {
   z-index: 2;
   position: absolute;
   align-items: flex-start;
@@ -39,6 +39,32 @@
 }
 
 .limewire-img {
+  height: 4.4rem;
+  width: 4.4rem;
+  margin-bottom: 1rem;
+}
+
+.my-computer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+.my-computer-img {
+  height: 4.4rem;
+  width: 4.4rem;
+  margin-bottom: 1rem;
+}
+
+.my-documents-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+.my-documents-img {
   height: 4.4rem;
   width: 4.4rem;
   margin-bottom: 1rem;
