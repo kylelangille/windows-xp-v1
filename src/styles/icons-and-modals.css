@@ -367,6 +367,10 @@
 /*   MESSENGER WINDOW   */
 /* ******************** */
 
+.messenger--hidden {
+  display: none;
+}
+
 .messenger-window {
   background-color: #0058ef;
   height: 60rem;
@@ -478,7 +482,7 @@
 .forget-me-link:link,
 .forget-me-link:visited {
   margin-left: 2rem;
-  color: #04054b;
+  color: #1010a3;
 }
 
 .messenger-sign-in--btn {
@@ -517,6 +521,25 @@
   height: 15rem;
   user-select: none;
   margin-left: 24rem;
-  filter: blur(2px);
+  filter: blur(4px);
   z-index: 0;
+}
+
+.messenger-window--bottom-links {
+  display: flex;
+  position: absolute;
+  top: 90%;
+  line-height: 2.2rem;
+}
+
+.messenger-window--bottom-links-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem;
+}
+
+.messenger-link:link,
+.messenger-link:visited {
+  color: #1010a3;
+  font-size: 1.4rem;
 }

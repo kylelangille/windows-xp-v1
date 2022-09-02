@@ -137,3 +137,22 @@ const closeNotepad = function () {
 openNotepadBtn.addEventListener("click", openNotepad);
 
 closeNotepadBtn.addEventListener("click", closeNotepad);
+
+////////////////////////////////////////
+// Opening and closing messenger
+
+const openMessengerBtn = document.querySelector(".open-messenger-btn");
+const closeMessengerBtn = document.querySelector(".messenger-window--hidden");
+const messengerWindow = document.querySelector(".messenger-window");
+
+const openMessenger = function () {
+  messengerWindow.classList.remove("messenger--hidden");
+};
+
+const closeMessenger = function () {
+  messengerWindow.classList.add("messenger--hidden");
+};
+
+openMessengerBtn.addEventListener("click", openMessenger);
+
+closeMessengerBtn.addEventListener("click", closeMessenger);
