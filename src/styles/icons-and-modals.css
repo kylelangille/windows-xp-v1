@@ -423,7 +423,6 @@
   height: 55rem;
   width: 39rem;
   margin-left: 0.5rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -459,4 +458,65 @@
   background: none;
   border: none;
   outline: none;
+  margin-bottom: 1.7rem;
+}
+
+.messenger-sign-in-checkboxes {
+  font-size: 1.4rem;
+  color: #04054b;
+  margin-bottom: 2rem;
+}
+
+.messenger-sign-in-checkboxes input {
+  cursor: pointer;
+}
+
+.remember-me-option {
+  margin-right: 2rem;
+}
+
+.forget-me-link:link,
+.forget-me-link:visited {
+  margin-left: 2rem;
+  color: #04054b;
+}
+
+.messenger-sign-in--btn {
+  width: 9rem;
+  height: 4rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #39486d;
+  border: 2px solid #5e5b54;
+  border-radius: 2px;
+  background: linear-gradient(
+    to bottom,
+    #fffffe,
+    #fffdff,
+    #f3f6ff,
+    #e3e6fe,
+    #d9e2fe,
+    #edba60
+  );
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.messenger-sign-in--btn:hover {
+  background: linear-gradient(
+    to bottom,
+    #d7dae2,
+    #c4c8d3,
+    #b0b6c5,
+    #9ca4b6,
+    #8891a7,
+    #edba60
+  );
+}
+
+.messenger-background {
+  height: 15rem;
+  user-select: none;
+  margin-left: 24rem;
+  filter: blur(2px);
+  z-index: 0;
 }

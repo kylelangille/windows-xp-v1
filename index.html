@@ -151,7 +151,7 @@
               type="password"
               name="password"
               placeholder="Enter your password"
-              class="messenger-password-input"
+              class="messenger-password--input"
             />
             <div class="messenger-status">
               <label for="status" class="messenger-status-label">Status:</label>
@@ -170,7 +170,7 @@
             <div class="option-wrapper">
               <input type="checkbox" name="rememberme" value="rememberme" />
               <label for="rememberme">Remember Me</label
-              ><a href="#">Forget Me</a>
+              ><a href="#" class="forget-me-link">(Forget Me)</a>
             </div>
             <div class="option-wrapper">
               <input type="checkbox" name="rememberpass" value="remeberpass" />
@@ -181,6 +181,11 @@
               <label for="auto">Sign me in automatically</label>
             </div>
           </form>
+          <button class="messenger-sign-in--btn">Sign In</button>
+          <img
+            class="messenger-background"
+            src="images/start-menu/messenger-icon.png"
+          />
         </div>
       </div>
 
@@ -272,7 +277,6 @@
           </div>
         </div>
       </div>
-
       <div class="start-menu start-menu--hidden">
         <div class="start-menu-top">
           <img
