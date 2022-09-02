@@ -20,6 +20,8 @@ A great deal, and not limited to this list. I'm sure I'll add more as I think of
 
 - Add more "functioning" desktop icons
 
+- Reduce length of CSS files by making some more reusable "helper" classes
+
 - Add more "functioning" items in the start menu
 
 I'm sure that I'll be working on this project for quite some time, so this to-do list as well as the project itself will be a long time in the making. Lots of little green squares incoming (hopefully! :D).
