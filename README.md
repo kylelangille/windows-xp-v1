@@ -18,8 +18,8 @@ A great deal, and not limited to this list. I'm sure I'll add more as I think of
 
 - Develop a more robust "style guide" so I'm not thoughtlessly just slapping in random rem values until components look "somewhat okay"
 
-- Make the start button close when clicking outside of it (except taskbar)
-
 - Add more "functioning" desktop icons
+
+- Add more "functioning" items in the start menu
 
 I'm sure that I'll be working on this project for quite some time, so this to-do list as well as the project itself will be a long time in the making. Lots of little green squares incoming (hopefully! :D).
