@@ -118,3 +118,22 @@ const closeCalc = function () {
 
 openCalcBtn.addEventListener("click", openCalc);
 closeCalcBtn.addEventListener("click", closeCalc);
+
+///////////////////////////////////////
+// Opening and closing the notepad
+
+const openNotepadBtn = document.querySelector(".open-notepad-btn");
+const closeNotepadBtn = document.querySelector(".notepad-window--hidden");
+const notepadWindow = document.querySelector(".notepad-window");
+
+const openNotepad = function () {
+  notepadWindow.classList.remove("notepad--hidden");
+};
+
+const closeNotepad = function () {
+  notepadWindow.classList.add("notepad--hidden");
+};
+
+openNotepadBtn.addEventListener("click", openNotepad);
+
+closeNotepadBtn.addEventListener("click", closeNotepad);

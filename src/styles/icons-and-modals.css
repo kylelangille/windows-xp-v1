@@ -181,8 +181,6 @@
   background: linear-gradient(#5986f5, #0c63f0);
 }
 
-/* LimeWire */
-
 .limewire-window--main {
   height: 42.25rem;
   width: 55.25rem;
@@ -285,4 +283,82 @@
   height: 9.75rem;
   width: 9.75rem;
   margin-left: 3.25rem;
+}
+
+/* ******************** */
+/*    NOTEPAD WINDOW    */
+/* ******************** */
+
+.notepad--hidden {
+  display: none;
+}
+
+.notepad-window {
+  background-color: #0058ef;
+  height: 50.2rem;
+  width: 40rem;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  top: 25%;
+  position: absolute;
+  left: 55%;
+  user-select: none;
+}
+
+.notepad-window--top {
+  height: 4.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notepad-window--top-left {
+  display: flex;
+  align-items: center;
+}
+
+.notepad-window--icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+}
+
+.notepad-window--top-left p {
+  font-size: 1.7rem;
+  color: white;
+}
+
+.notepad-window--top-right {
+  display: flex;
+  margin-top: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+.notepad-window--main-top {
+  display: flex;
+  background-color: #ece9d8;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #0058ef;
+  border-right: 0.5rem solid #0058ef;
+  border-left: 0.5rem solid #0058ef;
+  padding-bottom: 0.5rem;
+}
+
+.notepad-top--links:link,
+.notepad-top--links:visited {
+  color: black;
+  margin-left: 1rem;
+  text-decoration: none;
+  user-select: none;
+  cursor: unset;
+}
+
+.notepad-window--main textarea {
+  resize: none;
+  display: flex;
+  margin: auto;
+  margin-top: 0.3rem;
+  width: 39rem;
+  height: 42.3rem;
+  font-size: 2rem;
+  outline: none;
 }
