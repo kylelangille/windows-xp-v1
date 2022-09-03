@@ -154,6 +154,7 @@
   color: #fff;
   font-size: 1.7rem;
   padding-left: 1rem;
+  user-select: none;
 }
 
 .limewire-window--main {
