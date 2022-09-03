@@ -52,7 +52,7 @@
   margin-left: 1rem;
   text-decoration: none;
   user-select: none;
-  cursor: unset;
+  cursor: default;
 }
 
 .notepad-window--main textarea {

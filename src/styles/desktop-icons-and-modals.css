@@ -55,10 +55,9 @@
 .desktop-icons-container {
   position: absolute;
   align-items: flex-start;
-  margin-left: 1rem;
-  margin-top: 2rem;
+  margin: 2rem 0 0 1rem;
   display: grid;
-  grid-template-columns: repeat(2 1fr);
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 2rem;
 }
 
@@ -92,7 +91,7 @@
 .recycling-window {
   background-color: #0355e7;
   border: 1px solid #003ea7;
-  height: 30rem;
+  height: 29.7rem;
   width: 30rem;
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
@@ -105,24 +104,17 @@
 .window-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+}
+
+.recycling-window-top--left {
+  display: flex;
+  align-items: center;
 }
 
 .recycling-bin-img-sm {
   width: 3rem;
   height: 3rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
-.recycle-window-top-text {
-  color: #fff;
-  margin-left: -5.4rem;
-  margin-top: 1rem;
-  align-self: center;
-  font-size: 1.8rem;
-  font-weight: 400;
-  user-select: none;
+  margin: 0 1rem 0 1rem;
 }
 
 .window-main {
@@ -272,9 +264,9 @@
 /*  MY COMPUTER WINDOW  */
 /* ******************** */
 
-.my-computer-window--hidden {
+/* .my-computer-window--hidden {
   display: none;
-}
+} */
 
 .my-computer-window {
   height: 80rem;
@@ -308,8 +300,15 @@
   padding: 0.7rem 0rem 0.7rem 1rem;
   background-color: #f7f0ee;
   border-left: 3px solid #0058ef;
-  border-right: 3px solid #0058ef;
+
   border-bottom: 1px solid #888;
+  width: 100%;
+}
+
+.my-computer-window--top-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .my-computer-top--link:link,
@@ -319,6 +318,22 @@
   font-size: 1.4rem;
   margin-right: 1rem;
   cursor: default;
+  user-select: none;
+}
+
+.my-computer-window--top-links--right {
+  width: 5.2rem;
+  height: 3.1rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border-right: 3px solid #0058ef;
+  border-left: 1px solid #888;
+}
+
+.windows-logo-sm {
+  width: 2.5rem;
+  object-fit: contain;
 }
 
 .my-computer-window--top-nav {
