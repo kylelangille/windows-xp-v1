@@ -172,4 +172,5 @@ body {
   );
   width: 10rem;
   text-shadow: 1px 1px #333;
+  border-left: 1px solid #444;
 }
