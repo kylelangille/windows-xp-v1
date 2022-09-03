@@ -91,6 +91,7 @@
 
 .recycling-window {
   background-color: #0355e7;
+  border: 1px solid #003ea7;
   height: 30rem;
   width: 30rem;
   border-top-right-radius: 9px;
@@ -141,6 +142,7 @@
 
 .limewire-window {
   background-color: #0355e7;
+  border: 1px solid #003ea7;
   height: 48.75rem;
   width: 56.87rem;
   border-top-right-radius: 9px;
@@ -159,6 +161,7 @@
 .limewire-window--top-text {
   color: #fff;
   font-size: 1.7rem;
+  padding-left: 1rem;
 }
 
 .limewire-window--main {
@@ -266,249 +269,6 @@
 }
 
 /* ******************** */
-/*    NOTEPAD WINDOW    */
-/* ******************** */
-
-.notepad--hidden {
-  display: none;
-}
-
-.notepad-window {
-  background-color: #0058ef;
-  height: 50.2rem;
-  width: 40rem;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
-  top: 25%;
-  position: absolute;
-  left: 55%;
-  user-select: none;
-}
-
-.notepad-window--top {
-  height: 4.4rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.notepad-window--top-left {
-  display: flex;
-  align-items: center;
-}
-
-.notepad-window--icon {
-  width: 3rem;
-  height: 3rem;
-  margin: 0.5rem;
-}
-
-.notepad-window--main-top {
-  display: flex;
-  background-color: #ece9d8;
-  font-size: 1.6rem;
-  border-bottom: 1px solid #0058ef;
-  border-right: 0.5rem solid #0058ef;
-  border-left: 0.5rem solid #0058ef;
-  padding-bottom: 0.5rem;
-}
-
-.notepad-top--links:link,
-.notepad-top--links:visited {
-  color: black;
-  margin-left: 1rem;
-  text-decoration: none;
-  user-select: none;
-  cursor: unset;
-}
-
-.notepad-window--main textarea {
-  resize: none;
-  display: flex;
-  margin: auto;
-  margin-top: 0.3rem;
-  width: 39rem;
-  height: 42.3rem;
-  font-size: 2rem;
-  outline: none;
-}
-
-/* ******************** */
-/*   MESSENGER WINDOW   */
-/* ******************** */
-
-.messenger--hidden {
-  display: none;
-}
-
-.messenger-window {
-  background-color: #0058ef;
-  height: 60rem;
-  width: 40rem;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  user-select: none;
-}
-
-.messenger-window--top {
-  height: 4.4rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.messenger-window--top-left {
-  display: flex;
-  align-items: center;
-}
-
-.messenger-window--icon {
-  width: 3rem;
-  height: 3rem;
-  margin: 0.5rem;
-}
-
-.messenger-window--top-right {
-  display: flex;
-  margin: 0.7rem 0.7rem 0 0;
-}
-
-.messenger-window--main {
-  background: linear-gradient(
-    to bottom,
-    #f5f8fd,
-    #eaeef9,
-    #e5ebf7,
-    #d7dff2,
-    #d1dcf0,
-    #d0dcf2,
-    #d9e2f3,
-    #e8edf8,
-    #f0f3fa,
-    #f9fafe
-  );
-  height: 55rem;
-  width: 39rem;
-  margin-left: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.messenger-icon-main--top {
-  margin: 2rem 0 1rem 0;
-}
-
-.messenger-sign-in {
-  display: flex;
-  flex-direction: column;
-}
-
-.messenger-sign-in label {
-  font-size: 1.4rem;
-  color: #04054b;
-}
-
-.messenger-email--input,
-.messenger-password--input {
-  width: 20rem;
-  height: 3rem;
-  outline: none;
-  margin-bottom: 1rem;
-}
-
-.messenger-status-label {
-  outline: none;
-}
-
-.messenger-sign-in--options {
-  background: none;
-  border: none;
-  outline: none;
-  margin-bottom: 1.7rem;
-}
-
-.messenger-sign-in-checkboxes {
-  font-size: 1.4rem;
-  color: #04054b;
-  margin-bottom: 2rem;
-}
-
-.messenger-sign-in-checkboxes input {
-  cursor: pointer;
-}
-
-.remember-me-option {
-  margin-right: 2rem;
-}
-
-.forget-me-link:link,
-.forget-me-link:visited {
-  margin-left: 2rem;
-  color: #1010a3;
-}
-
-.messenger-sign-in--btn {
-  width: 9rem;
-  height: 4rem;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #39486d;
-  border: 2px solid #5e5b54;
-  border-radius: 2px;
-  background: linear-gradient(
-    to bottom,
-    #fffffe,
-    #fffdff,
-    #f3f6ff,
-    #e3e6fe,
-    #d9e2fe,
-    #edba60
-  );
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
-}
-
-.messenger-sign-in--btn:hover {
-  background: linear-gradient(
-    to bottom,
-    #d7dae2,
-    #c4c8d3,
-    #b0b6c5,
-    #9ca4b6,
-    #8891a7,
-    #edba60
-  );
-}
-
-.messenger-background {
-  height: 15rem;
-  user-select: none;
-  margin-left: 24rem;
-  filter: blur(4px);
-  z-index: 0;
-}
-
-.messenger-window--bottom-links {
-  display: flex;
-  position: absolute;
-  top: 90%;
-  line-height: 2.2rem;
-}
-
-.messenger-window--bottom-links-left {
-  display: flex;
-  flex-direction: column;
-  margin-right: 10rem;
-}
-
-.messenger-link:link,
-.messenger-link:visited {
-  color: #1010a3;
-  font-size: 1.4rem;
-}
-
-/* ******************** */
 /*  MY COMPUTER WINDOW  */
 /* ******************** */
 
@@ -520,6 +280,7 @@
   height: 80rem;
   width: 90rem;
   background-color: #0058ef;
+  border: 1px solid #003ea7;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   position: absolute;

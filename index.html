@@ -13,6 +13,11 @@
     />
     <link rel="stylesheet" type="text/css" href="src/styles/styles.css" />
     <link rel="stylesheet" type="text/css" href="src/styles/start-menu.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="src/styles/start-menu-modals.css"
+    />
     <link rel="stylesheet" type="text/css" href="src/styles/calculator.css" />
     <link
       rel="stylesheet"
@@ -181,7 +186,7 @@
                 name="chevron-forward-outline"
               ></ion-icon>
             </button>
-            <button class="cancel-btn">Cancel</button>
+            <button class="cancel-btn close-limewire">Cancel</button>
           </div>
         </div>
       </div>
@@ -315,10 +320,7 @@
             ><a class="window-btn" href="#">View</a
             ><a class="window-btn" href="#">Help</a>
           </div>
-          <div class="calc-display">
-            <div class="previous-operand" data-previous-operand>123 +</div>
-            <div class="current-operand" data-current-operand>456</div>
-          </div>
+          <div class="calc-display">0</div>
           <div class="button-container">
             <div class="btn-container-top">
               <button class="blank" disabled></button>
@@ -559,7 +561,7 @@
         </div>
       </div>
     </div>
-    <script defer src="src/script.js"></script>
+    <script src="src/script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

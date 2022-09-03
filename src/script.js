@@ -1,6 +1,7 @@
 "use strict";
 /////////////////////////////////////////////////////////
 // TASKBAR
+/////////////////////////
 // Time in Taskbar
 function currentTime() {
   let date = new Date();
@@ -31,7 +32,8 @@ currentTime();
 ///////////////////////////////////////////////////////
 // DESKTOP ICONS
 
-//Opening and closing My Computer
+//////////////////////////////////
+//Opening and Closing My Computer
 const myComputerWindow = document.querySelector(".my-computer-window");
 const btnCloseMyComputer = document.querySelector(".close-my-computer-btn");
 const btnOpenMyComputer = document.querySelector(".my-computer--open");
@@ -46,7 +48,8 @@ const closeMyComputer = () => {
 btnOpenMyComputer.addEventListener("dblclick", openMyComputer);
 btnCloseMyComputer.addEventListener("click", closeMyComputer);
 
-// Opening and closing the Recycling Bin
+////////////////////////////////////////
+// Opening and Closing the Recycling Bin
 const recyclingBinWindow = document.querySelector(".recycling-window");
 const btnCloseRecyclingBin = document.querySelector(
   ".close-btn--recycling-bin"
@@ -69,6 +72,7 @@ btnOpenRecyclingBin.addEventListener("dblclick", openRecyclingBin);
 const limewireWindow = document.querySelector(".limewire-window");
 const btnCloseLimewire = document.querySelector(".close-limewire");
 const btnOpenLimeWire = document.querySelector(".limewire-icon--open");
+const btnCloseLimeWireCancel = document.querySelector(".cancel-btn");
 
 const openLimewire = function () {
   limewireWindow.classList.remove("limewire-window--hidden");
@@ -80,6 +84,7 @@ const closeLimewire = function () {
 
 btnOpenLimeWire.addEventListener("dblclick", openLimewire);
 btnCloseLimewire.addEventListener("click", closeLimewire);
+btnCloseLimeWireCancel.addEventListener("click", closeLimewire);
 
 /////////////////////////////////////////////////////////
 // START MENU

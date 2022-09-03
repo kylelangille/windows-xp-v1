@@ -3,9 +3,10 @@
 }
 
 .calc-window {
-  height: 30.7rem;
+  height: 31rem;
   width: 28rem;
   background-color: #0058ef;
+  border: 1px solid #003ea7;
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
   position: absolute;
@@ -16,7 +17,6 @@
 .calc-window-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
 }
 
 .calc-window-top-left {
@@ -66,10 +66,6 @@
   display: flex;
   align-items: flex-end;
   justify-content: right;
-}
-
-.previous-operand,
-.current-operand {
   font-size: 1.8rem;
 }
 
