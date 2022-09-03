@@ -24,7 +24,7 @@
   <body>
     <div class="main">
       <div class="desktop-icons-container">
-        <div class="desktop-icon">
+        <div class="desktop-icon my-computer--open">
           <img
             class="desktop-icon-img"
             src="images/start-menu/my-computer-icon.png"
@@ -32,7 +32,6 @@
           />
           <p class="icon-text">My Computer</p>
         </div>
-
         <div class="desktop-icon">
           <img
             class="desktop-icon-img"
@@ -74,6 +73,50 @@
           <p class="icon-text">LimeWire</p>
         </div>
       </div>
+
+      <div class="my-computer-window my-computer-window--hidden">
+        <div class="my-computer-window--top">
+          <div class="my-computer-window--top-left">
+            <img
+              class="my-computer-icon--window"
+              src="images/start-menu/my-computer-icon.png"
+            />
+            <p class="window-top-text">My Computer</p>
+          </div>
+          <div class="window-top-btns">
+            <button class="min-btn btn">_</button>
+            <button class="max-btn btn">❐</button>
+            <button class="close-btn btn close-my-computer-btn">✖</button>
+          </div>
+        </div>
+        <div class="my-computer-window--top-links">
+          <div class="links-container">
+            <a class="my-computer-top--link" href="#"><u>F</u>ile</a>
+            <a class="my-computer-top--link" href="#"><u>E</u>dit</a>
+            <a class="my-computer-top--link" href="#"><u>V</u>iew</a>
+            <a class="my-computer-top--link" href="#">F<u>a</u>vorites</a>
+            <a class="my-computer-top--link" href="#"><u>T</u>ools</a>
+            <a class="my-computer-top--link" href="#"><u>H</u>elp</a>
+          </div>
+        </div>
+        <div class="my-computer-window--top-nav">
+          <div class="nav-left--container">
+            <div class="arrow-circle-background">
+              <ion-icon class="arrow-left" name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="arrow-circle-background">
+              <ion-icon
+                class="arrow-right"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="my-computer-window--main">
+          <div class="my-computer-window--main-left"></div>
+          <div class="my-computer-window--main-right"></div>
+        </div>
+      </div>
       <div class="recycling-window recycling-window--hidden">
         <div class="window-top">
           <img
@@ -81,15 +124,11 @@
             src="images/recycling-bin.png"
             alt="Recycling bin"
           />
-          <p class="window-top-text">Recycle Bin</p>
+          <p class="recycle-window-top-text">Recycle Bin</p>
           <div class="window-top-btns">
             <button class="min-btn btn">_</button>
             <button class="max-btn btn">❐</button>
-            <button
-              class="close-btn btn recycling-window--hidden close-btn--recycling-bin"
-            >
-              ✖
-            </button>
+            <button class="close-btn btn close-btn--recycling-bin">✖</button>
           </div>
         </div>
         <div class="window-main"></div>
@@ -154,9 +193,9 @@
               class="messenger-window--icon"
               src="images/start-menu/messenger-icon.png"
             />
-            <p>MSN Messenger</p>
+            <p class="window-top-text">MSN Messenger</p>
           </div>
-          <div class="messenger-window--top-right">
+          <div class="window-top-btns">
             <button class="min-btn btn">_</button>
             <button class="max-btn btn">❐</button>
             <button class="close-btn btn messenger-window--hidden">✖</button>
@@ -236,9 +275,9 @@
               class="notepad-window--icon"
               src="images/start-menu/notepad-icon.png"
             />
-            <p>Notepad</p>
+            <p class="window-top-text">Notepad</p>
           </div>
-          <div class="notepad-window--top-right">
+          <div class="window-top-btns">
             <button class="min-btn btn">_</button>
             <button class="max-btn btn">❐</button>
             <button class="close-btn btn notepad-window--hidden">✖</button>
@@ -262,14 +301,13 @@
               class="calc-icon-sm"
               src="images/start-menu/calculator-icon-sm.png"
             />
-            <p class="calc--title">Calculator</p>
-            <div class="calc-top-left-btns">
-              <button class="min-btn btn">_</button>
-              <button class="max-btn btn">❐</button>
-              <button class="close-btn btn calc-window--hidden">✖</button>
-            </div>
+            <p class="window-top-text">Calculator</p>
           </div>
-          <div class="calc-window-top-right"></div>
+          <div class="window-top-btns">
+            <button class="min-btn btn">_</button>
+            <button class="max-btn btn">❐</button>
+            <button class="close-btn btn calc-window--hidden">✖</button>
+          </div>
         </div>
         <div class="calc-window-main">
           <div class="calc-window-main-top">

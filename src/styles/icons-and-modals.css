@@ -1,3 +1,54 @@
+/* **************** */
+/* REUSABLE CLASSES */
+/* **************** */
+.window-top-text {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.window-top-btns {
+  display: flex;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 0.7rem;
+}
+
+.btn {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  user-select: none;
+  margin-right: 0.2rem;
+  font-size: 2.2rem;
+}
+
+.btn:last-child {
+  margin-right: -0.2rem;
+}
+
+.close-btn {
+  background: linear-gradient(#e6997f, #e13e12);
+}
+
+.close-btn:hover {
+  background: linear-gradient(#d37c70, #dc482f);
+}
+
+.min-btn,
+.max-btn {
+  background: linear-gradient(#5986f5, #0c63f0);
+}
+
+.min-btn:hover,
+.max-btn:hover {
+  background: linear-gradient(#6a92f6, #2473f2);
+}
+
 /* ************* */
 /* DESKTOP ICONS */
 /* ************* */
@@ -63,7 +114,7 @@
   margin-left: 1rem;
 }
 
-.window-top-text {
+.recycle-window-top-text {
   color: #fff;
   margin-left: -5.4rem;
   margin-top: 1rem;
@@ -71,48 +122,6 @@
   font-size: 1.8rem;
   font-weight: 400;
   user-select: none;
-}
-
-.window-top-btns {
-  display: flex;
-  margin-top: 1rem;
-  margin-right: 1rem;
-}
-
-.btn {
-  border-radius: 4px;
-  border: 1px solid #fff;
-  height: 3rem;
-  width: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  user-select: none;
-  margin-right: 0.2rem;
-  font-size: 2.2rem;
-}
-
-.btn:last-child {
-  margin-right: -0.2rem;
-}
-
-.close-btn {
-  background: linear-gradient(#e6997f, #e13e12);
-}
-
-.close-btn:hover {
-  background: linear-gradient(#d37c70, #dc482f);
-}
-
-.min-btn,
-.max-btn {
-  background: linear-gradient(#5986f5, #0c63f0);
-}
-
-.min-btn:hover,
-.max-btn:hover {
-  background: linear-gradient(#6a92f6, #2473f2);
 }
 
 .window-main {
@@ -144,13 +153,11 @@
 .limewire-window--top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.3rem;
+  align-items: center;
 }
 
 .limewire-window--top-text {
   color: #fff;
-  margin-left: 1.625rem;
-  margin-top: 1.625rem;
   font-size: 1.7rem;
 }
 
@@ -295,17 +302,6 @@
   margin: 0.5rem;
 }
 
-.notepad-window--top-left p {
-  font-size: 1.7rem;
-  color: #fff;
-}
-
-.notepad-window--top-right {
-  display: flex;
-  margin-top: 0.7rem;
-  margin-right: 0.7rem;
-}
-
 .notepad-window--main-top {
   display: flex;
   background-color: #ece9d8;
@@ -365,11 +361,6 @@
 .messenger-window--top-left {
   display: flex;
   align-items: center;
-}
-
-.messenger-window--top-left p {
-  font-size: 1.7rem;
-  color: #fff;
 }
 
 .messenger-window--icon {
@@ -515,4 +506,80 @@
 .messenger-link:visited {
   color: #1010a3;
   font-size: 1.4rem;
+}
+
+/* ******************** */
+/*  MY COMPUTER WINDOW  */
+/* ******************** */
+
+.my-computer-window--hidden {
+  display: none;
+}
+
+.my-computer-window {
+  height: 80rem;
+  width: 90rem;
+  background-color: #0058ef;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+}
+
+.my-computer-window--top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-computer-window--top-left {
+  display: flex;
+  align-items: center;
+}
+
+.my-computer-icon--window {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+}
+
+.links-container {
+  padding: 0.7rem 0rem 0.7rem 1rem;
+  background-color: #f7f0ee;
+  border-left: 3px solid #0058ef;
+  border-right: 3px solid #0058ef;
+  border-bottom: 1px solid #888;
+}
+
+.my-computer-top--link:link,
+.my-computer-top--link:visited {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  cursor: default;
+}
+
+.my-computer-window--top-nav {
+  background-color: #f7f0ee;
+  border-left: 3px solid #0058ef;
+  border-right: 3px solid #0058ef;
+  display: flex;
+  padding: 1rem 0 1rem 0;
+}
+
+.nav-left--container {
+  display: flex;
+  padding-left: 1rem;
+}
+
+.arrow-circle-background {
+  border-radius: 100%;
+  background: linear-gradient(#d8d7d7, #bfbfc2, #b2b3b3, #9a9893);
+}
+
+.arrow-left,
+.arrow-right {
+  font-size: 2.4rem;
+  color: #f7f0ee;
 }

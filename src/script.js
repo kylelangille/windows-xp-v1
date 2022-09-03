@@ -30,7 +30,23 @@ currentTime();
 
 ///////////////////////////////////////////////////////
 // DESKTOP ICONS
-// Opening and Closing the Recycling Bin
+
+//Opening and closing My Computer
+const myComputerWindow = document.querySelector(".my-computer-window");
+const btnCloseMyComputer = document.querySelector(".close-my-computer-btn");
+const btnOpenMyComputer = document.querySelector(".my-computer--open");
+
+const openMyComputer = () => {
+  myComputerWindow.classList.remove("my-computer-window--hidden");
+};
+
+const closeMyComputer = () => {
+  myComputerWindow.classList.add("my-computer-window--hidden");
+};
+btnOpenMyComputer.addEventListener("dblclick", openMyComputer);
+btnCloseMyComputer.addEventListener("click", closeMyComputer);
+
+// Opening and closing the Recycling Bin
 const recyclingBinWindow = document.querySelector(".recycling-window");
 const btnCloseRecyclingBin = document.querySelector(
   ".close-btn--recycling-bin"

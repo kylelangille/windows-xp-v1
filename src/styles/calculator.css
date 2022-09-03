@@ -3,7 +3,7 @@
 }
 
 .calc-window {
-  height: 30rem;
+  height: 30.7rem;
   width: 28rem;
   background-color: #0058ef;
   border-top-right-radius: 9px;
@@ -13,9 +13,10 @@
   top: 25%;
 }
 
-.calc--title {
-  font-size: 1.8rem;
-  font-weight: 400;
+.calc-window-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
 .calc-window-top-left {
@@ -25,11 +26,6 @@
   padding-left: 4px;
   padding-bottom: 4px;
   color: #fff;
-}
-
-.calc-top-left-btns {
-  padding-left: 6.6rem;
-  display: flex;
 }
 
 .calc-icon-sm {
