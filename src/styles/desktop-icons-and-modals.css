@@ -264,9 +264,9 @@
 /*  MY COMPUTER WINDOW  */
 /* ******************** */
 
-/* .my-computer-window--hidden {
+.my-computer-window--hidden {
   display: none;
-} */
+}
 
 .my-computer-window {
   height: 80rem;
