@@ -208,7 +208,7 @@
 /* ******************** */
 
 .my-computer-window {
-  height: 70rem;
+  height: 70.2rem;
   width: 90rem;
   background-color: #0058ef;
   border: 1px solid #003ea7;
@@ -333,13 +333,36 @@
 
 .nav-address--bar {
   height: 2.4rem;
+  width: 50rem;
   border: 1px solid #888;
   outline: none;
   padding-left: 2rem;
+  margin-right: 0.5rem;
 }
 
 .nav-address-bar-wrapper {
   position: relative;
+}
+
+.go-arrow--wrapper {
+  background: linear-gradient(#83bc89, #50a554, #28a528);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #2c6526;
+  margin-right: 0.5rem;
+}
+
+.go-arrow {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.go-text {
+  font-size: 1.3rem;
 }
 
 .menu-icon-vsm {
