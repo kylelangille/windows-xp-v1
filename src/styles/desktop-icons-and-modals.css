@@ -208,7 +208,7 @@
 /* ******************** */
 
 .my-computer-window {
-  height: 80rem;
+  height: 70rem;
   width: 90rem;
   background-color: #0058ef;
   border: 1px solid #003ea7;
@@ -269,6 +269,7 @@
   justify-content: center;
   border-right: 3px solid #0058ef;
   border-left: 1px solid #888;
+  border-bottom: 1px solid #888;
 }
 
 .windows-logo-sm {
@@ -281,6 +282,7 @@
   background-color: #f7f0ee;
   border-left: 3px solid #0058ef;
   border-right: 3px solid #0058ef;
+  border-bottom: 1px solid #888;
   display: flex;
   padding: 1rem 0 1rem 0;
 }
@@ -349,10 +351,11 @@
 
 .my-computer-window--main {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   background-color: #6c80df;
   border-left: 3px solid #0058ef;
   border-right: 3px solid #0058ef;
+  height: 57.1rem;
 }
 
 .my-computer-window--main-left {
@@ -360,7 +363,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .system-tasks,
@@ -371,7 +374,7 @@
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   background: linear-gradient(#d2def6, #d3ddf7, #d7dbf5, #d6dcf8);
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 2.4rem;
   border: 1px solid #fff;
 }
 
@@ -387,7 +390,7 @@
 
 .small-up-arrow {
   font-size: 1.4rem;
-  margin-left: 0.2rem;
+  margin-left: 0.1rem;
 }
 
 .small-circle--background {
@@ -434,5 +437,42 @@
 
 .details--sub-sub-heading {
   font-size: 1.2rem;
-  margin-left: 1.2rem;
+  margin: 0 0 1rem 1.2rem;
+}
+
+.my-computer-window--main-right {
+  background-color: #fffdfe;
+  width: 67rem;
+  height: 100%;
+}
+
+.files-stored {
+  margin-top: 1rem;
+}
+
+.files-stored--heading {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.window-icon--container {
+  display: flex;
+}
+
+.window-icon--container:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.window-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  margin: 2rem 1rem 2rem 0;
+}
+
+.window-icon-text {
+  font-size: 1.2rem;
 }
