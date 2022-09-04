@@ -346,3 +346,93 @@
   top: 95px;
   left: 340px;
 }
+
+.my-computer-window--main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #6c80df;
+  border-left: 3px solid #0058ef;
+  border-right: 3px solid #0058ef;
+}
+
+.my-computer-window--main-left {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.system-tasks,
+.other-places,
+.details-container {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  background: linear-gradient(#d2def6, #d3ddf7, #d7dbf5, #d6dcf8);
+  margin-bottom: 2rem;
+  border: 1px solid #fff;
+}
+
+.system-tasks-heading,
+.other-places-heading,
+.details-heading {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #fefdfb, #f6fbff, #d4ddfa, #bfcdf0);
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.small-up-arrow {
+  font-size: 1.4rem;
+  margin-left: 0.2rem;
+}
+
+.small-circle--background {
+  border-radius: 100%;
+  width: 1.7rem;
+  background-color: #fdfbff;
+  margin-right: 0.4rem;
+}
+
+.my-computer--heading--text {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  color: #32588d;
+  font-weight: bold;
+}
+
+.system-tasks--link-container,
+.other-places--link-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.7rem;
+  margin-top: 1rem;
+}
+
+.system--links:link,
+.system--links:visited {
+  text-decoration: none;
+  color: #32588d;
+  font-size: 1.2rem;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.side-panel-icon {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.details--sub-heading {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0.7rem 0 0 1.2rem;
+}
+
+.details--sub-sub-heading {
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+}
