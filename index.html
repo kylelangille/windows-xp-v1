@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="icon" href="images/other-assets/windows-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -79,7 +79,7 @@
         </div>
       </div>
 
-      <div class="my-computer-window my-computer-window--hidden">
+      <div class="my-computer-window">
         <div class="my-computer-window--top">
           <div class="my-computer-window--top-left">
             <img
@@ -112,14 +112,51 @@
         </div>
         <div class="my-computer-window--top-nav">
           <div class="nav-left--container">
-            <div class="arrow-circle-background">
+            <div class="arrow-circle-background arrow-circle-background--left">
               <ion-icon class="arrow-left" name="arrow-back-outline"></ion-icon>
             </div>
-            <div class="arrow-circle-background">
+            <div class="arrow-circle-background arrow-circle-background--right">
               <ion-icon
                 class="arrow-right"
                 name="arrow-forward-outline"
               ></ion-icon>
+            </div>
+            <div class="nav-icon--container">
+              <img
+                src="images/other-assets/open-recent-icon.png"
+                class="menu-icon-med"
+              />
+            </div>
+            <div class="nav-icon--container">
+              <img
+                src="images/start-menu/search-icon.png"
+                class="menu-icon-med"
+              />
+              <img
+                class="menu-icon-med"
+                src="images/other-assets/open-folder.png"
+              />
+            </div>
+            <div class="nav-icon--container">
+              <img
+                src="images/other-assets/unknown-icon.png"
+                class="menu-icon-med"
+              />
+              &nbsp; &nbsp; &nbsp; &nbsp;
+            </div>
+          </div>
+          <div class="nav-right--container">
+            <p class="nav--address">A<u>d</u>dress:</p>
+            <div class="nav-address--bar-wrapper">
+              <img
+                class="menu-icon-vsm"
+                src="images/start-menu/my-computer-icon.png"
+              />
+              <input
+                type="text"
+                class="nav-address--bar"
+                placeholder="My Computer"
+              />
             </div>
           </div>
         </div>
@@ -128,7 +165,8 @@
           <div class="my-computer-window--main-right"></div>
         </div>
       </div>
-      <div class="recycling-window recycling-window--hidden">
+
+      <div class="window--hidden recycling-window">
         <div class="window-top">
           <div class="recycling-window-top--left">
             <img
@@ -146,7 +184,7 @@
         </div>
         <div class="window-main"></div>
       </div>
-      <div class="limewire-window limewire-window--hidden">
+      <div class="limewire-window window--hidden">
         <div class="limewire-window--top">
           <div class="limewire-window--top-text">
             LimeWire PRO 4.20.69 Setup
@@ -199,7 +237,7 @@
         </div>
       </div>
 
-      <div class="messenger--hidden messenger-window">
+      <div class="window--hidden messenger-window">
         <div class="messenger-window--top">
           <div class="messenger-window--top-left">
             <img
@@ -281,7 +319,7 @@
         </div>
       </div>
 
-      <div class="notepad--hidden notepad-window">
+      <div class="window--hidden notepad-window">
         <div class="notepad-window--top">
           <div class="notepad-window--top-left">
             <img
@@ -307,7 +345,7 @@
           <textarea></textarea>
         </div>
       </div>
-      <div class="calc--hidden calc-window">
+      <div class="window--hidden calc-window">
         <div class="calc-window-top">
           <div class="calc-window-top-left">
             <img

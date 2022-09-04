@@ -2,10 +2,6 @@
 /*    NOTEPAD WINDOW    */
 /* ******************** */
 
-.notepad--hidden {
-  display: none;
-}
-
 .notepad-window {
   background-color: #0058ef;
   border: 1px solid #003ea7;
@@ -69,10 +65,6 @@
 /* ******************** */
 /*   MESSENGER WINDOW   */
 /* ******************** */
-
-.messenger--hidden {
-  display: none;
-}
 
 .messenger-window {
   background-color: #0058ef;

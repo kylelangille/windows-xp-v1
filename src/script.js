@@ -39,11 +39,11 @@ const btnCloseMyComputer = document.querySelector(".close-my-computer-btn");
 const btnOpenMyComputer = document.querySelector(".my-computer--open");
 
 const openMyComputer = () => {
-  myComputerWindow.classList.remove("my-computer-window--hidden");
+  myComputerWindow.classList.remove("window--hidden");
 };
 
 const closeMyComputer = () => {
-  myComputerWindow.classList.add("my-computer-window--hidden");
+  myComputerWindow.classList.add("window--hidden");
 };
 btnOpenMyComputer.addEventListener("dblclick", openMyComputer);
 btnCloseMyComputer.addEventListener("click", closeMyComputer);
@@ -57,11 +57,11 @@ const btnCloseRecyclingBin = document.querySelector(
 const btnOpenRecyclingBin = document.querySelector(".recycling-window--open");
 
 const openRecyclingBin = function () {
-  recyclingBinWindow.classList.remove("recycling-window--hidden");
+  recyclingBinWindow.classList.remove("window--hidden");
 };
 
 const closeRecyclingBin = function () {
-  recyclingBinWindow.classList.add("recycling-window--hidden");
+  recyclingBinWindow.classList.add("window--hidden");
 };
 
 btnCloseRecyclingBin.addEventListener("click", closeRecyclingBin);
@@ -75,11 +75,11 @@ const btnOpenLimeWire = document.querySelector(".limewire-icon--open");
 const btnCloseLimeWireCancel = document.querySelector(".cancel-btn");
 
 const openLimewire = function () {
-  limewireWindow.classList.remove("limewire-window--hidden");
+  limewireWindow.classList.remove("window--hidden");
 };
 
 const closeLimewire = function () {
-  limewireWindow.classList.add("limewire-window--hidden");
+  limewireWindow.classList.add("window--hidden");
 };
 
 btnOpenLimeWire.addEventListener("dblclick", openLimewire);
@@ -130,11 +130,11 @@ const closeCalcBtn = document.querySelector(".calc-window--hidden");
 const calcWindow = document.querySelector(".calc-window");
 
 const openCalc = function () {
-  calcWindow.classList.remove("calc--hidden");
+  calcWindow.classList.remove("window--hidden");
 };
 
 const closeCalc = function () {
-  calcWindow.classList.add("calc--hidden");
+  calcWindow.classList.add("window--hidden");
 };
 
 openCalcBtn.addEventListener("click", openCalc);
@@ -148,11 +148,11 @@ const closeNotepadBtn = document.querySelector(".notepad-window--hidden");
 const notepadWindow = document.querySelector(".notepad-window");
 
 const openNotepad = function () {
-  notepadWindow.classList.remove("notepad--hidden");
+  notepadWindow.classList.remove("window--hidden");
 };
 
 const closeNotepad = function () {
-  notepadWindow.classList.add("notepad--hidden");
+  notepadWindow.classList.add("window--hidden");
 };
 
 openNotepadBtn.addEventListener("click", openNotepad);
@@ -167,11 +167,11 @@ const closeMessengerBtn = document.querySelector(".messenger-window--hidden");
 const messengerWindow = document.querySelector(".messenger-window");
 
 const openMessenger = function () {
-  messengerWindow.classList.remove("messenger--hidden");
+  messengerWindow.classList.remove("window--hidden");
 };
 
 const closeMessenger = function () {
-  messengerWindow.classList.add("messenger--hidden");
+  messengerWindow.classList.add("window--hidden");
 };
 
 openMessengerBtn.addEventListener("click", openMessenger);

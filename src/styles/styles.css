@@ -78,9 +78,6 @@ body {
 }
 
 .background {
-  /*   width: 100%;
-  height: 100vh;
-  object-fit: cover; */
   z-index: 0;
   overflow: hidden;
 }
@@ -173,4 +170,60 @@ body {
   width: 10rem;
   text-shadow: 1px 1px #333;
   border-left: 1px solid #444;
+}
+
+/* **************** */
+/* REUSABLE CLASSES */
+/* **************** */
+.window-top-text {
+  font-size: 1.7rem;
+  color: #fff;
+  user-select: none;
+}
+
+.window-top-btns {
+  display: flex;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 0.7rem;
+}
+
+.btn {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  user-select: none;
+  margin-right: 0.2rem;
+  font-size: 2.2rem;
+}
+
+.btn:last-child {
+  margin-right: -0.2rem;
+}
+
+.close-btn {
+  background: linear-gradient(#e6997f, #e13e12);
+}
+
+.close-btn:hover {
+  background: linear-gradient(#d37c70, #dc482f);
+}
+
+.min-btn,
+.max-btn {
+  background: linear-gradient(#5986f5, #0c63f0);
+}
+
+.min-btn:hover,
+.max-btn:hover {
+  background: linear-gradient(#6a92f6, #2473f2);
+}
+
+.window--hidden {
+  display: none;
 }
