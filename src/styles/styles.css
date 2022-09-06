@@ -133,6 +133,7 @@ body {
   font-style: italic;
   font-family: "Roboto", sans-serif;
   transition: all 0.3s;
+  outline: none;
 }
 
 .start:hover {
