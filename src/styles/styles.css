@@ -228,3 +228,72 @@ body {
 .window--hidden {
   display: none;
 }
+
+/* **************** */
+/*    ERROR MODAL   */
+/* **************** */
+.error-modal {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.error-modal--top {
+  background-color: #0058ef;
+  border: 1px solid #003ea7;
+  border-bottom: none;
+  width: 32rem;
+  height: 4.4rem;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  align-items: center;
+}
+
+.error-heading {
+  margin-left: 1rem;
+}
+
+.error-modal--main {
+  background-color: #ece9d8;
+  height: 18rem;
+  width: 32rem;
+  border: 3px solid #0058ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-main--content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 28rem;
+}
+
+.error-icon {
+  height: 4.2rem;
+  width: 4.2rem;
+}
+
+.error-main--text-wrapper {
+  line-height: 1.5;
+}
+
+.error-main--text {
+  font-size: 1.2rem;
+}
+
+.error-ok--btn {
+  padding: 0.8rem 3rem 0.8rem 3rem;
+  width: 8rem;
+  margin-top: 2rem;
+  border: 1px solid #000;
+  background-color: #eeebdc;
+}
+
+.error-ok--btn:hover {
+  background-color: #d4d2c2;
+}

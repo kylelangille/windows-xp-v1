@@ -548,6 +548,36 @@
           </div>
         </div>
       </div>
+
+      <div class="error-modal window--hidden">
+        <div class="error-modal--top">
+          <p class="window-top-text error-heading">Local Disc (C:)</p>
+          <div class="window-top-btns">
+            <button class="close-btn btn close-error--btn">✖</button>
+          </div>
+        </div>
+
+        <div class="error-modal--main">
+          <div class="error-main--content-wrapper">
+            <img
+              class="error-icon"
+              src="images/other-assets/error-icon.png"
+              alt="error icon"
+            />
+            <div class="error-main--text-wrapper">
+              <p class="error-main--text">
+                Some system files are missing or corrupted.
+              </p>
+              <p class="error-main--text">Access is denied.</p>
+              <p class="error-main--text">
+                Please contact your system administrator.
+              </p>
+            </div>
+          </div>
+          <button class="error-ok--btn">Ok</button>
+        </div>
+      </div>
+
       <div class="start-menu start-menu--hidden">
         <div class="start-menu-top">
           <img
@@ -591,7 +621,7 @@
               </div>
             </a>
             <a href="#" class="start-menu-cell">
-              <div class="menu-left-cell5 left-cell">
+              <div class="menu-left-cell5 left-cell open-wmp-btn">
                 <img
                   class="media-player-icon menu-icon"
                   src="images/start-menu/media-player-icon.png"

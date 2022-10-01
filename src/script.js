@@ -177,3 +177,26 @@ const closeMessenger = function () {
 openMessengerBtn.addEventListener("click", openMessenger);
 
 closeMessengerBtn.addEventListener("click", closeMessenger);
+
+////////////////////////////////////////////
+//Opening and closing the error modal
+
+const errorModal = document.querySelector(".error-modal");
+const closeErrorBtn = document.querySelector(".close-error--btn");
+const closeErrorBtnOk = document.querySelector(".error-ok--btn");
+const errorSound = new Audio("../sounds/error-sound.mp3");
+
+const closeErrorModal = function () {
+  errorModal.classList.add("window--hidden");
+};
+
+const openErrorModal = function () {
+  errorModal.classList.remove("window--hidden");
+  errorSound.play();
+};
+
+closeErrorBtn.addEventListener("click", closeErrorModal);
+closeErrorBtnOk.addEventListener("click", closeErrorModal);
+
+const openMediaPlayer = document.querySelector(".open-wmp-btn");
+openMediaPlayer.addEventListener("click", openErrorModal);
