@@ -198,5 +198,9 @@ const openErrorModal = function () {
 closeErrorBtn.addEventListener("click", closeErrorModal);
 closeErrorBtnOk.addEventListener("click", closeErrorModal);
 
+//Temporary Error EventListeners for unbuilt components
 const openMediaPlayer = document.querySelector(".open-wmp-btn");
 openMediaPlayer.addEventListener("click", openErrorModal);
+
+const limewireNextBtn = document.querySelector(".next-btn");
+limewireNextBtn.addEventListener("click", openErrorModal);

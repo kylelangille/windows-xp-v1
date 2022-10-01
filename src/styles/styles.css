@@ -233,22 +233,25 @@ body {
 /*    ERROR MODAL   */
 /* **************** */
 .error-modal {
+  background-color: #0058ef;
+  border: 1px solid #003ea7;
   position: absolute;
   top: 40%;
   left: 40%;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  height: 23rem;
+  width: 32rem;
 }
 
 .error-modal--top {
-  background-color: #0058ef;
-  border: 1px solid #003ea7;
   border-bottom: none;
   width: 32rem;
   height: 4.4rem;
   display: flex;
   justify-content: space-between;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
+
   align-items: center;
 }
 
@@ -259,12 +262,12 @@ body {
 .error-modal--main {
   background-color: #ece9d8;
   height: 18rem;
-  width: 32rem;
-  border: 3px solid #0058ef;
+  width: 31rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 0.4rem;
 }
 
 .error-main--content-wrapper {
@@ -287,11 +290,13 @@ body {
 }
 
 .error-ok--btn {
+  border: 1px solid #000;
+  background-color: #eeebdc;
   padding: 0.8rem 3rem 0.8rem 3rem;
   width: 8rem;
   margin-top: 2rem;
-  border: 1px solid #000;
-  background-color: #eeebdc;
+  cursor: pointer;
+  font-size: 1.4rem;
 }
 
 .error-ok--btn:hover {
