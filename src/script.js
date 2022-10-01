@@ -199,6 +199,15 @@ closeErrorBtn.addEventListener("click", closeErrorModal);
 closeErrorBtnOk.addEventListener("click", closeErrorModal);
 
 //Temporary Error EventListeners for unbuilt components
+const openNetworkPlaces = document.querySelector(".network-places-icon");
+openNetworkPlaces.addEventListener("dblclick", openErrorModal);
+
+const openMyDocuments = document.querySelector(".my-documents-icon");
+openMyDocuments.addEventListener("dblclick", openErrorModal);
+
+const openInternetExplorer = document.querySelector(".internet-explorer-icon");
+openInternetExplorer.addEventListener("dblclick", openErrorModal);
+
 const openMediaPlayer = document.querySelector(".open-wmp-btn");
 openMediaPlayer.addEventListener("click", openErrorModal);
 
