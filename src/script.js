@@ -213,3 +213,9 @@ openMediaPlayer.addEventListener("click", openErrorModal);
 
 const limewireNextBtn = document.querySelector(".next-btn");
 limewireNextBtn.addEventListener("click", openErrorModal);
+
+const generalErrorVariable = document.querySelectorAll(".open-error--modal");
+
+generalErrorVariable.forEach((el) =>
+  el.addEventListener("click", openErrorModal)
+);
