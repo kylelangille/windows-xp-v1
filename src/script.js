@@ -219,3 +219,17 @@ const generalErrorVariable = document.querySelectorAll(".open-error--modal");
 generalErrorVariable.forEach((el) =>
   el.addEventListener("click", openErrorModal)
 );
+
+////////////////////////////////////
+//Startup
+
+const userProfile = document.querySelector(".login-screen--user-profile");
+const startupScreen = document.querySelector(".login-screen");
+const startupSound = new Audio("../sounds/startup-sound.mp3");
+
+const openWindows = () => {
+  startupScreen.classList.add("window--hidden");
+  startupSound.play();
+};
+
+userProfile.addEventListener("click", openWindows);

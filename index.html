@@ -28,6 +28,38 @@
   </head>
   <body>
     <div class="main">
+      <div class="login-screen">
+        <div class="login-screen--top">
+          <div class="logo-wrapper">
+            <img
+              class="login-screen--logo"
+              src="images/other-assets/windows-logo.png"
+              alt="Windows logo"
+            />
+            <p class="login-screen--logo-text">WindowsXP</p>
+          </div>
+        </div>
+        <div class="login-screen--main">
+          <div class="login-screen--main-left">
+            <h2 class="login-welcome--heading">welcome</h2>
+            <p class="login-welcome--subheading">
+              Click on your user name to begin
+            </p>
+          </div>
+          <div class="login-screen--divider"></div>
+          <div class="login-screen--main-right">
+            <div class="login-screen--user-profile">
+              <img
+                class="login-screen--profile-img"
+                src="images/start-menu/chess-profile-img.jpg"
+                alt="Chess profile image"
+              />
+              <p class="login-screen--profile-name">User</p>
+            </div>
+          </div>
+        </div>
+        <div class="login-screen--bottom"></div>
+      </div>
       <div class="desktop-icons-container">
         <div class="desktop-icon my-computer--open">
           <img
@@ -779,11 +811,6 @@
         </div>
       </div>
     </div>
-    <audio
-      id="startup-sound"
-      src="sounds/startup-sound.mp3"
-      autoplay="autoplay"
-    ></audio>
     <script src="src/script.js"></script>
     <script
       type="module"

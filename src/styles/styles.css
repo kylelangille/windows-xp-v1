@@ -95,6 +95,119 @@ body {
   display: none;
 }
 
+/* **************** */
+/*   LOGIN SCREEN   */
+/* **************** */
+.login-screen {
+  height: 100vh;
+  width: 100vw;
+  z-index: 10000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #5a7edc;
+}
+
+.login-screen--top {
+  background-color: #00309c;
+  height: 10rem;
+  border-bottom: 2px solid #5c80d5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem 0 0;
+  align-items: center;
+}
+
+.login-screen--logo {
+  height: 6rem;
+  width: 6rem;
+}
+
+.login-screen--logo-text {
+  color: #eef6fd;
+  font-size: 1.4rem;
+}
+
+.login-screen--main {
+  display: flex;
+  justify-content: center;
+}
+
+.login-screen--main-left {
+  margin-top: 10rem;
+}
+
+.login-welcome--heading {
+  color: #eef6fd;
+  text-shadow: 2px 3px#2f4793;
+  font-size: 6.6rem;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  margin-right: 20rem;
+  user-select: none;
+}
+
+.login-welcome--subheading {
+  color: #eef6fd;
+  font-size: 2rem;
+  margin-left: 5rem;
+  user-select: none;
+}
+
+.login-screen--user-profile {
+  display: flex;
+  align-items: center;
+  margin: 10rem 0 0 4rem;
+  cursor: pointer;
+  filter: blur(1px);
+  transition: all 0.3s ease;
+}
+
+.login-screen--user-profile:hover {
+  filter: blur(0px);
+}
+
+.login-screen--profile-img {
+  height: 8rem;
+  border-radius: 9px;
+  border: 2px solid #eef6fd;
+  user-select: none;
+  margin-right: 2rem;
+}
+
+.login-screen--profile-name {
+  font-size: 2rem;
+  color: #eef6fd;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.login-screen--divider {
+  height: 50rem;
+  width: 0.3rem;
+  background: radial-gradient(#6c92e7, #6388e1, #6185e3);
+}
+
+.login-screen--bottom {
+  background: linear-gradient(
+    to right,
+    #3832ac,
+    #3133aa,
+    #1e32a5,
+    #0f319f,
+    #0f319f
+  );
+  height: 10rem;
+  border-top: 2px solid #ba8f93;
+}
+
 /* ************* */
 /*     TASKBAR   */
 /* ************* */
