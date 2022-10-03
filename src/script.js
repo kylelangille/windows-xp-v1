@@ -179,7 +179,7 @@ openMessengerBtn.addEventListener("click", openMessenger);
 closeMessengerBtn.addEventListener("click", closeMessenger);
 
 ////////////////////////////////////////////
-//Opening and closing the error modal
+//ERROR MODAL
 
 const errorModal = document.querySelector(".error-modal");
 const closeErrorBtn = document.querySelector(".close-error--btn");
@@ -221,7 +221,7 @@ generalErrorVariable.forEach((el) =>
 );
 
 ////////////////////////////////////
-//Startup
+//START UP
 
 const userProfile = document.querySelector(".login-screen--user-profile");
 const startupScreen = document.querySelector(".login-screen");
@@ -233,3 +233,15 @@ const openWindows = () => {
 };
 
 userProfile.addEventListener("click", openWindows);
+
+////////////////////////////////////////
+// Logging off
+
+const logOffBtn = document.querySelector(".log-off");
+
+const logOff = () => {
+  startupScreen.classList.remove("window--hidden");
+  startupSound.play();
+};
+
+logOffBtn.addEventListener("click", logOff);
