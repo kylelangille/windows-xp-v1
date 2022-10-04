@@ -228,8 +228,10 @@ const startupScreen = document.querySelector(".login-screen");
 const startupSound = new Audio("../sounds/startup-sound.mp3");
 
 const openWindows = () => {
-  startupScreen.classList.add("window--hidden");
-  startupSound.play();
+  setTimeout(() => {
+    startupScreen.classList.add("window--hidden");
+    startupSound.play();
+  }, 300);
 };
 
 userProfile.addEventListener("click", openWindows);
@@ -240,6 +242,7 @@ userProfile.addEventListener("click", openWindows);
 const logOffBtn = document.querySelector(".log-off");
 
 const logOff = () => {
+  closeStartMenu();
   startupScreen.classList.remove("window--hidden");
   startupSound.play();
 };
