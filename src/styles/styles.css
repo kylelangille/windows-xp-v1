@@ -422,3 +422,79 @@ body {
 .error-ok--btn:hover {
   background-color: #d4d2c2;
 }
+
+/* **************** */
+/*  LOADING SCREEN  */
+/* **************** */
+.loading-screen {
+  width: 100%;
+  height: 100vh;
+  background: #121212;
+  background-size: cover;
+  z-index: 99999;
+}
+
+.loading-logo--wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 22rem;
+}
+
+.loading-text--msoft {
+  font-size: 4rem;
+  color: #eef6fd;
+  margin-top: 20rem;
+}
+
+.loading-screen--text-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -2.4rem;
+}
+
+.loading-screen--text-windows {
+  font-size: 8.8rem;
+  color: #eef6fd;
+}
+
+.loading-screen--text-xp {
+  font-size: 6rem;
+  color: #ed671d;
+}
+
+.loading-screen--bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22rem;
+  align-items: center;
+}
+
+.loading-screen--text-bottom-left {
+  margin-left: 3rem;
+  color: #eef6fd;
+  font-size: 2.4rem;
+}
+
+.loading-screen--text-bottom-right {
+  margin-right: 3rem;
+  color: #eef6fd;
+  font-size: 4rem;
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+
+.loading-bar--container {
+  margin: 5rem auto 0 auto;
+  height: 4rem;
+  width: 32rem;
+  border: 5px solid #777;
+  border-radius: 9px;
+}
+
+.loading-bar {
+  height: 100%;
+  width: 0;
+  background: radial-gradient(#758dfc, #4d68dc, #0f23b8);
+  transition: width 0.4s ease;
+}

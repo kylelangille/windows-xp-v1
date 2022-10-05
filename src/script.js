@@ -222,10 +222,28 @@ generalErrorVariable.forEach((el) =>
 
 ////////////////////////////////////
 //START UP
-
+const loadingScreen = document.querySelector(".loading-screen");
+const loadingBar = document.querySelector(".loading-bar");
 const userProfile = document.querySelector(".login-screen--user-profile");
 const startupScreen = document.querySelector(".login-screen");
 const startupSound = new Audio("../sounds/startup-sound.mp3");
+
+const loadingBarProgress = (progress) => {
+  loadingBar.style.width = `${progress}%`;
+};
+
+setTimeout(() => loadingBarProgress(22), 1000);
+setTimeout(() => loadingBarProgress(45), 2000);
+setTimeout(() => loadingBarProgress(85), 3600);
+setTimeout(() => loadingBarProgress(98), 4500);
+setTimeout(() => loadingBarProgress(100), 5000);
+
+const endLoading = () => {
+  loadingScreen.classList.add("window--hidden");
+  startupScreen.classList.remove("window--hidden");
+};
+
+setTimeout(endLoading, 5000);
 
 const openWindows = () => {
   setTimeout(() => {
