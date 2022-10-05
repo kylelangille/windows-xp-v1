@@ -465,8 +465,10 @@ body {
 .loading-screen--bottom {
   display: flex;
   justify-content: space-between;
-  margin-top: 22rem;
+  width: 100%;
   align-items: center;
+  position: fixed;
+  bottom: 0;
 }
 
 .loading-screen--text-bottom-left {
