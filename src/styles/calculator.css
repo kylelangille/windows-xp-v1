@@ -64,10 +64,15 @@
   background-color: #fff;
   border: 1px solid #a0a8aa;
   margin: 0.5rem 0rem 0.5rem 1rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: right;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
   font-size: 1.8rem;
+}
+
+.previous-operand,
+.current-operand {
+  font-size: 1.2rem;
 }
 
 .top-btn {
