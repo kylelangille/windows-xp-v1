@@ -23,7 +23,7 @@ operationBtns.forEach((button) => {
 });
 
 const appendNumber = (number) => {
-  if (currentOperand.textContent === 0 || shouldResetScreen) resetScreen();
+  if (currentOperand.textContent === "0" || shouldResetScreen) resetScreen();
   currentOperand.textContent += number;
 };
 
@@ -42,7 +42,7 @@ const clear = () => {
 
 const addDecimal = () => {
   if (shouldResetScreen) resetScreen();
-  if (currentOperand.textContent === "") currentOperand.textContent === "0";
+  if (currentOperand.textContent === "") currentOperand.textContent = "0";
   if (currentOperand.textContent.includes(".")) return;
   currentOperand.textContent += ".";
 };
@@ -55,7 +55,7 @@ const backspace = () => {
 
 const setOperation = (operator) => {
   if (currentOperation !== null) evaluate();
-  firstOperand = firstOperand.textContent;
+  firstOperand = currentOperand.textContent;
   currentOperation = operator;
   previousOperand.textContent = `${firstOperand} ${currentOperation}`;
   shouldResetScreen = true;

@@ -226,7 +226,8 @@ const loadingScreen = document.querySelector(".loading-screen");
 const loadingBar = document.querySelector(".loading-bar");
 const userProfile = document.querySelector(".login-screen--user-profile");
 const startupScreen = document.querySelector(".login-screen");
-const startupSound = new Audio("../sounds/startup-sound.mp3");
+const startupSound = new Audio("../sounds/startup.wav");
+const logOffSound = new Audio("../sounds/logoffsound.wav");
 
 const loadingBarProgress = (progress) => {
   loadingBar.style.width = `${progress}%`;
@@ -262,7 +263,7 @@ const logOffBtn = document.querySelector(".log-off");
 const logOff = () => {
   closeStartMenu();
   startupScreen.classList.remove("window--hidden");
-  startupSound.play();
+  logOffSound.play();
 };
 
 logOffBtn.addEventListener("click", logOff);
