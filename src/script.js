@@ -208,8 +208,16 @@ closeErrorBtnOk.addEventListener("click", closeErrorModal);
 const limewireNextBtn = document.querySelector(".next-btn");
 limewireNextBtn.addEventListener("click", openErrorModal);
 
-const generalErrorVariable = document.querySelectorAll(".open-error--modal");
+const networkPlacesIcon = document.querySelector(".network-places-icon");
+networkPlacesIcon.addEventListener("dblclick", openErrorModal);
 
+const myDocumentsIcon = document.querySelector(".my-documents-icon");
+myDocumentsIcon.addEventListener("dblclick", openErrorModal);
+
+const internetExplorerIcon = document.querySelector(".internet-explorer-icon");
+internetExplorerIcon.addEventListener("dblclick", openErrorModal);
+
+const generalErrorVariable = document.querySelectorAll(".open-error--modal");
 generalErrorVariable.forEach((el) =>
   el.addEventListener("click", openErrorModal)
 );
