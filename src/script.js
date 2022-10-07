@@ -131,6 +131,7 @@ const calcWindow = document.querySelector(".calc-window");
 
 const openCalc = function () {
   calcWindow.classList.remove("window--hidden");
+  closeStartMenu();
 };
 
 const closeCalc = function () {
@@ -149,6 +150,7 @@ const notepadWindow = document.querySelector(".notepad-window");
 
 const openNotepad = function () {
   notepadWindow.classList.remove("window--hidden");
+  closeStartMenu();
 };
 
 const closeNotepad = function () {
@@ -168,6 +170,7 @@ const messengerWindow = document.querySelector(".messenger-window");
 
 const openMessenger = function () {
   messengerWindow.classList.remove("window--hidden");
+  closeStartMenu();
 };
 
 const closeMessenger = function () {

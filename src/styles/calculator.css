@@ -12,6 +12,7 @@
   position: absolute;
   left: 44%;
   top: 25%;
+  user-select: none;
 }
 
 .calc-window-top {

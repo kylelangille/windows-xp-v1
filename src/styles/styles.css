@@ -107,11 +107,13 @@ body {
 .login-screen--logo {
   height: 6rem;
   width: 6rem;
+  user-select: none;
 }
 
 .login-screen--logo-text {
   color: #eef6fd;
   font-size: 1.4rem;
+  user-select: none;
 }
 
 .login-screen--main {
@@ -440,10 +442,15 @@ body {
   margin-top: 22rem;
 }
 
+.loading-screen--logo-img {
+  user-select: none;
+}
+
 .loading-text--msoft {
   font-size: 4rem;
   color: #eef6fd;
   margin-top: 20rem;
+  user-select: none;
 }
 
 .loading-screen--text-wrapper {
@@ -455,11 +462,13 @@ body {
 .loading-screen--text-windows {
   font-size: 8.8rem;
   color: #eef6fd;
+  user-select: none;
 }
 
 .loading-screen--text-xp {
   font-size: 6rem;
   color: #ed671d;
+  user-select: none;
 }
 
 .loading-screen--bottom {
@@ -475,6 +484,7 @@ body {
   margin-left: 3rem;
   color: #eef6fd;
   font-size: 2.4rem;
+  user-select: none;
 }
 
 .loading-screen--text-bottom-right {
@@ -484,6 +494,7 @@ body {
   font-weight: 600;
   font-style: italic;
   font-family: "Roboto", sans-serif;
+  user-select: none;
 }
 
 .loading-bar--container {
