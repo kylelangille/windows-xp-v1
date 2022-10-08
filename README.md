@@ -16,6 +16,8 @@ The Windows XP name, artwork, trademark are property of Microsoft. This project 
 
 A great deal, and not limited to this list. I'm sure I'll add more as I think of other features.
 
+- Completely re-do the Recycle Bin modal
+
 - Develop a more robust "style guide" so I'm not thoughtlessly just slapping in random rem values until components look "somewhat okay"
 
 - Add more "functioning" desktop icons

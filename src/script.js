@@ -230,6 +230,7 @@ const userProfile = document.querySelector(".login-screen--user-profile");
 const startupScreen = document.querySelector(".login-screen");
 const startupSound = new Audio("../sounds/startup.wav");
 const logOffSound = new Audio("../sounds/logoffsound.wav");
+const logInSound = new Audio("../sounds/logonsound.wav");
 
 const loadingBarProgress = (progress) => {
   loadingBar.style.width = `${progress}%`;
@@ -244,6 +245,7 @@ setTimeout(() => loadingBarProgress(100), 5000);
 const endLoading = () => {
   loadingScreen.classList.add("window--hidden");
   startupScreen.classList.remove("window--hidden");
+  startupSound.play();
 };
 
 setTimeout(endLoading, 5000);
@@ -251,7 +253,7 @@ setTimeout(endLoading, 5000);
 const openWindows = () => {
   setTimeout(() => {
     startupScreen.classList.add("window--hidden");
-    startupSound.play();
+    logInSound.play();
   }, 300);
 };
 
