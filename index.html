@@ -27,8 +27,12 @@
     <title>Windows XP</title>
   </head>
   <body>
-    <div class="main">
-      <div class="loading-screen">
+    <main class="main">
+      <div class="boot-screen">
+        <button class="boot-btn"><ion-icon class="boot-btn--icon"name="power-outline"></ion-icon></button>
+        <h3 class="boot-btn--label">Click to boot PC</h3>
+      </div>
+      <div class="loading-screen window--hidden">
         <div class="loading-logo--wrapper">
           <p class="loading-text--msoft">Microsoft</p>
           <img
@@ -50,803 +54,829 @@
           </p>
           <p class="loading-screen--text-bottom-right">Microsoft</p>
         </div>
-      </div>
-      <div class="login-screen window--hidden">
-        <div class="login-screen--top">
-          <div class="logo-wrapper">
-            <img
-              class="login-screen--logo"
-              src="images/other-assets/windows-logo.png"
-              alt="Windows logo"
-            />
-            <p class="login-screen--logo-text">WindowsXP</p>
-          </div>
         </div>
-        <div class="login-screen--main">
-          <div class="login-screen--main-left">
-            <h2 class="login-welcome--heading">welcome</h2>
-            <p class="login-welcome--subheading">
-              Click on your user name to begin
-            </p>
-          </div>
-          <div class="login-screen--divider"></div>
-          <div class="login-screen--main-right">
-            <div class="login-screen--user-profile">
+
+        <div class="login-screen window--hidden">
+          <div class="login-screen--top">
+            <div class="logo-wrapper">
               <img
-                class="login-screen--profile-img"
-                src="images/start-menu/chess-profile-img.jpg"
-                alt="Chess profile image"
+                class="login-screen--logo"
+                src="images/other-assets/windows-logo.png"
+                alt="Windows logo"
               />
-              <p class="login-screen--profile-name">User</p>
+              <p class="login-screen--logo-text">WindowsXP</p>
+            </div>
+          </div>
+          <div class="login-screen--main">
+            <div class="login-screen--main-left">
+              <h2 class="login-welcome--heading">welcome</h2>
+              <p class="login-welcome--subheading">
+                Click on your user name to begin
+              </p>
+            </div>
+            <div class="login-screen--divider"></div>
+            <div class="login-screen--main-right">
+              <div class="login-screen--user-profile">
+                <img
+                  class="login-screen--profile-img"
+                  src="images/start-menu/chess-profile-img.jpg"
+                  alt="Chess profile image"
+                />
+                <p class="login-screen--profile-name">User</p>
+              </div>
+            </div>
+          </div>
+          <div class="login-screen--bottom">
+            <div class="turn-off login-screen--turn-off">
+              <ion-icon
+                class="turn-off-icon turn-off-icon--login"
+                name="power-outline"
+              ></ion-icon>
+              <p class="turn-off-text--login">Turn off computer</p>
             </div>
           </div>
         </div>
-        <div class="login-screen--bottom">
-          <div class="turn-off login-screen--turn-off">
-            <ion-icon
-              class="turn-off-icon turn-off-icon--login"
-              name="power-outline"
-            ></ion-icon>
-            <p class="turn-off-text--login">Turn off computer</p>
-          </div>
-        </div>
-      </div>
-      <div class="desktop-icons-container">
-        <div class="desktop-icon my-computer--open">
-          <img
-            class="desktop-icon-img"
-            src="images/start-menu/my-computer-icon.png"
-            alt="My Computer"
-          />
-          <p class="icon-text">My Computer</p>
-        </div>
-        <div class="desktop-icon network-places-icon">
-          <img
-            class="desktop-icon-img"
-            src="images/start-menu/network-places.png"
-            alt="Network places"
-          />
-          <p class="icon-text">My Network Places</p>
-        </div>
-        <div class="desktop-icon recycling-window--open">
-          <img
-            class="desktop-icon-img"
-            src="images/recycling-bin.png"
-            alt="Recycling bin"
-          />
-          <p class="icon-text">Recycle Bin</p>
-        </div>
-        <div class="desktop-icon my-documents-icon">
-          <img
-            class="desktop-icon-img"
-            src="images/start-menu/my-docs-icon.png"
-            alt="My documents"
-          />
-          <p class="icon-text">My Documents</p>
-        </div>
-        <div class="desktop-icon internet-explorer-icon">
-          <img
-            class="desktop-icon-img"
-            src="images/start-menu/ie-icon.png"
-            alt="Internet Explorer"
-          />
-          <p class="icon-text">Internet Explorer</p>
-        </div>
-        <div class="desktop-icon limewire-icon--open">
-          <img
-            class="desktop-icon-img"
-            src="images/other-assets/limewire.png"
-            alt="Limewire"
-          />
-          <p class="icon-text">LimeWire</p>
-        </div>
-      </div>
-
-      <div class="my-computer-window window--hidden">
-        <div class="my-computer-window--top">
-          <div class="my-computer-window--top-left">
+        <div class="desktop-icons-container">
+          <div class="desktop-icon my-computer--open">
             <img
-              class="my-computer-icon--window"
+              class="desktop-icon-img"
               src="images/start-menu/my-computer-icon.png"
+              alt="My Computer"
             />
-            <p class="window-top-text">My Computer</p>
+            <p class="icon-text">My Computer</p>
           </div>
-          <div class="window-top-btns">
-            <button class="min-btn btn">_</button>
-            <button class="max-btn btn">❐</button>
-            <button class="close-btn btn close-my-computer-btn">✖</button>
-          </div>
-        </div>
-        <div class="my-computer-window--top-links">
-          <div class="links-container">
-            <a class="my-computer-top--link" href="#"><u>F</u>ile</a>
-            <a class="my-computer-top--link" href="#"><u>E</u>dit</a>
-            <a class="my-computer-top--link" href="#"><u>V</u>iew</a>
-            <a class="my-computer-top--link" href="#">F<u>a</u>vorites</a>
-            <a class="my-computer-top--link" href="#"><u>T</u>ools</a>
-            <a class="my-computer-top--link" href="#"><u>H</u>elp</a>
-          </div>
-          <div class="my-computer-window--top-links--right">
+          <div class="desktop-icon network-places-icon">
             <img
-              class="windows-logo-sm"
-              src="images/other-assets/windows-logo.png"
+              class="desktop-icon-img"
+              src="images/start-menu/network-places.png"
+              alt="Network places"
             />
+            <p class="icon-text">My Network Places</p>
           </div>
-        </div>
-        <div class="my-computer-window--top-nav">
-          <div class="nav-left--container">
-            <div class="arrow-circle-background arrow-circle-background--left">
-              <ion-icon class="arrow-left" name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="arrow-circle-background arrow-circle-background--right">
-              <ion-icon
-                class="arrow-right"
-                name="arrow-forward-outline"
-              ></ion-icon>
-            </div>
-            <div class="nav-icon--container">
-              <img
-                src="images/other-assets/open-recent-icon.png"
-                class="menu-icon-med"
-              />
-            </div>
-            <div class="nav-icon--container">
-              <img
-                src="images/start-menu/search-icon.png"
-                class="menu-icon-med"
-              />
-              <img
-                class="menu-icon-med"
-                src="images/other-assets/open-folder.png"
-              />
-            </div>
-            <div class="nav-icon--container">
-              <img
-                src="images/other-assets/unknown-icon.png"
-                class="menu-icon-med"
-              />
-              &nbsp; &nbsp; &nbsp; &nbsp;
-            </div>
-          </div>
-          <div class="nav-right--container">
-            <p class="nav--address">A<u>d</u>dress:</p>
-            <div class="nav-address--bar-wrapper">
-              <img
-                class="menu-icon-vsm"
-                src="images/start-menu/my-computer-icon.png"
-              />
-              <input
-                type="text"
-                class="nav-address--bar"
-                placeholder="My Computer"
-              />
-            </div>
-            <div class="go-arrow--wrapper">
-              <ion-icon
-                class="go-arrow"
-                name="arrow-forward-outline"
-              ></ion-icon>
-            </div>
-            <p class="go-text">Go</p>
-          </div>
-        </div>
-        <div class="my-computer-window--main">
-          <div class="my-computer-window--main-left">
-            <div class="system-tasks">
-              <div class="system-tasks-heading">
-                <p class="my-computer--heading--text">System Tasks</p>
-                <div class="small-circle--background">
-                  <ion-icon
-                    class="small-up-arrow"
-                    name="chevron-up-outline"
-                  ></ion-icon>
-                </div>
-              </div>
-              <div class="system-tasks--link-container">
-                <a class="system--links" href="#"
-                  ><img
-                    src="images/other-assets/system-info.png"
-                    class="side-panel-icon"
-                  />View system information</a
-                >
-                <a class="system--links" href="#"
-                  ><img
-                    src="images/other-assets/add-or-remove.png"
-                    class="side-panel-icon"
-                  />Add or remove programs</a
-                >
-                <a class="system--links" href="#"
-                  ><img
-                    src="images/start-menu/ctrl-panel-icon.png"
-                    class="side-panel-icon"
-                  />Change a setting</a
-                >
-              </div>
-            </div>
-            <div class="other-places">
-              <div class="other-places-heading">
-                <p class="my-computer--heading--text">Other Places</p>
-                <div class="small-circle--background">
-                  <ion-icon
-                    class="small-up-arrow"
-                    name="chevron-up-outline"
-                  ></ion-icon>
-                </div>
-              </div>
-              <div class="other-places--link-container">
-                <a class="system--links" href="#">
-                  <img
-                    src="images/start-menu/network-places.png"
-                    class="side-panel-icon"
-                  />
-                  My Network Places</a
-                >
-                <a class="system--links" href="#"
-                  ><img
-                    src="images/start-menu/my-docs-icon.png"
-                    class="side-panel-icon"
-                  />
-                  My Documents</a
-                >
-                <a class="system--links" href="#"
-                  ><img
-                    src="images/other-assets/open-folder.png"
-                    class="side-panel-icon"
-                  />
-                  Shared Documents</a
-                >
-                <a class="system--links" href="#"
-                  ><img
-                    src="images/start-menu/ctrl-panel-icon.png"
-                    class="side-panel-icon"
-                  />
-                  Control Panel</a
-                >
-              </div>
-            </div>
-            <div class="details-container">
-              <div class="details-heading">
-                <p class="my-computer--heading--text">Details</p>
-                <div class="small-circle--background">
-                  <ion-icon
-                    class="small-up-arrow"
-                    name="chevron-up-outline"
-                  ></ion-icon>
-                </div>
-              </div>
-              <p class="details--sub-heading">My Computer</p>
-              <p class="details--sub-sub-heading">System Folder</p>
-            </div>
-          </div>
-
-          <div class="my-computer-window--main-right">
-            <div class="files-stored">
-              <p class="files-stored--heading">Files Stored on This Computer</p>
-              <div class="window-icon--container">
-                <div class="window-icon">
-                  <img
-                    src="images/other-assets/shared-doc.png"
-                    class="window-icon-img"
-                  />
-                  <p class="window-icon-text">Shared Documents</p>
-                </div>
-                <div class="window-icon">
-                  <img
-                    src="images/other-assets/folder.png"
-                    class="window-icon-img"
-                  />
-                  <p class="window-icon-text">User's Documents</p>
-                </div>
-              </div>
-            </div>
-            <div class="device-drives">
-              <p class="files-stored--heading">Device Drives</p>
-              <div class="window-icon--container">
-                <div class="window-icon">
-                  <img
-                    class="window-icon-img"
-                    src="images/other-assets/hard-drive.png"
-                  />
-                  <p class="window-icon-text">WIN_XP(C:)</p>
-                </div>
-                <div class="window-icon">
-                  <img
-                    class="window-icon-img"
-                    src="images/other-assets/shared-drive.png"
-                  />
-                  <p class="window-icon-text">STORAGE(G:)</p>
-                </div>
-              </div>
-            </div>
-            <div class="device-drives--other">
-              <p class="files-stored--heading">Other</p>
-              <div class="window-icon--container">
-                <div class="window-icon">
-                  <img
-                    class="window-icon-img"
-                    src="images/start-menu/ctrl-panel-icon.png"
-                  />
-                  <p class="window-icon-text">Control Panel</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="window--hidden recycling-window">
-        <div class="window-top">
-          <div class="recycling-window-top--left">
+          <div class="desktop-icon recycling-window--open">
             <img
-              class="recycling-bin-img-sm"
+              class="desktop-icon-img"
               src="images/recycling-bin.png"
               alt="Recycling bin"
             />
-            <p class="window-top-text">Recycle Bin</p>
+            <p class="icon-text">Recycle Bin</p>
           </div>
-          <div class="window-top-btns">
-            <button class="min-btn btn">_</button>
-            <button class="max-btn btn">❐</button>
-            <button class="close-btn btn close-btn--recycling-bin">✖</button>
+          <div class="desktop-icon my-documents-icon">
+            <img
+              class="desktop-icon-img"
+              src="images/start-menu/my-docs-icon.png"
+              alt="My documents"
+            />
+            <p class="icon-text">My Documents</p>
+          </div>
+          <div class="desktop-icon internet-explorer-icon">
+            <img
+              class="desktop-icon-img"
+              src="images/start-menu/ie-icon.png"
+              alt="Internet Explorer"
+            />
+            <p class="icon-text">Internet Explorer</p>
+          </div>
+          <div class="desktop-icon limewire-icon--open">
+            <img
+              class="desktop-icon-img"
+              src="images/other-assets/limewire.png"
+              alt="Limewire"
+            />
+            <p class="icon-text">LimeWire</p>
           </div>
         </div>
-        <div class="window-main"></div>
-      </div>
-      <div class="limewire-window window--hidden">
-        <div class="limewire-window--top">
-          <div class="limewire-window--top-text">
-            LimeWire PRO 4.20.69 Setup
-          </div>
-          <div class="window-top-btns">
-            <div class="min-btn btn">_</div>
-            <div class="max-btn btn">❐</div>
-            <div class="close-btn btn close-limewire">✖</div>
-          </div>
-        </div>
-        <div class="limewire-window--main">
-          <div class="limewire-window--left">
-            <img
-              class="limewire-logo--main1"
-              src="images/other-assets/limewire.png"
-            />
-            <img
-              class="limewire-logo--main2"
-              src="images/other-assets/limewire.png"
-            />
-            <img
-              class="limewire-logo--main3"
-              src="images/other-assets/limewire.png"
-            />
-            <img
-              class="limewire-logo--main4"
-              src="images/other-assets/limewire.png"
-            />
-            <img
-              class="limewire-logo--main5"
-              src="images/other-assets/limewire.png"
-            />
-          </div>
-          <div class="limewire-window--right">
-            <h2 class="limewire-main--heading">Welcome to LimeWire PRO</h2>
-            <p class="limewire-main--text">
-              Thank you for purchasing LimeWire PRO, the most advanced virus
-              distribution program on the planet. Please click Next to begin
-              installation.
-            </p>
-          </div>
-          <div class="limewire-window--bottom">
-            <button class="next-btn">
-              <u class="text-bigger">N</u>ext&nbsp;<ion-icon
-                name="chevron-forward-outline"
-              ></ion-icon>
-            </button>
-            <button class="cancel-btn close-limewire">Cancel</button>
-          </div>
-        </div>
-      </div>
 
-      <div class="window--hidden messenger-window">
-        <div class="messenger-window--top">
-          <div class="messenger-window--top-left">
+        <div class="my-computer-window window--hidden">
+          <div class="my-computer-window--top">
+            <div class="my-computer-window--top-left">
+              <img
+                class="my-computer-icon--window"
+                src="images/start-menu/my-computer-icon.png"
+              />
+              <p class="window-top-text">My Computer</p>
+            </div>
+            <div class="window-top-btns">
+              <button class="min-btn btn">_</button>
+              <button class="max-btn btn">❐</button>
+              <button class="close-btn btn close-my-computer-btn">✖</button>
+            </div>
+          </div>
+          <div class="my-computer-window--top-links">
+            <div class="links-container">
+              <a class="my-computer-top--link" href="#"><u>F</u>ile</a>
+              <a class="my-computer-top--link" href="#"><u>E</u>dit</a>
+              <a class="my-computer-top--link" href="#"><u>V</u>iew</a>
+              <a class="my-computer-top--link" href="#">F<u>a</u>vorites</a>
+              <a class="my-computer-top--link" href="#"><u>T</u>ools</a>
+              <a class="my-computer-top--link" href="#"><u>H</u>elp</a>
+            </div>
+            <div class="my-computer-window--top-links--right">
+              <img
+                class="windows-logo-sm"
+                src="images/other-assets/windows-logo.png"
+              />
+            </div>
+          </div>
+          <div class="my-computer-window--top-nav">
+            <div class="nav-left--container">
+              <div
+                class="arrow-circle-background arrow-circle-background--left"
+              >
+                <ion-icon
+                  class="arrow-left"
+                  name="arrow-back-outline"
+                ></ion-icon>
+              </div>
+              <div
+                class="arrow-circle-background arrow-circle-background--right"
+              >
+                <ion-icon
+                  class="arrow-right"
+                  name="arrow-forward-outline"
+                ></ion-icon>
+              </div>
+              <div class="nav-icon--container">
+                <img
+                  src="images/other-assets/open-recent-icon.png"
+                  class="menu-icon-med"
+                />
+              </div>
+              <div class="nav-icon--container">
+                <img
+                  src="images/start-menu/search-icon.png"
+                  class="menu-icon-med"
+                />
+                <img
+                  class="menu-icon-med"
+                  src="images/other-assets/open-folder.png"
+                />
+              </div>
+              <div class="nav-icon--container">
+                <img
+                  src="images/other-assets/unknown-icon.png"
+                  class="menu-icon-med"
+                />
+                &nbsp; &nbsp; &nbsp; &nbsp;
+              </div>
+            </div>
+            <div class="nav-right--container">
+              <p class="nav--address">A<u>d</u>dress:</p>
+              <div class="nav-address--bar-wrapper">
+                <img
+                  class="menu-icon-vsm"
+                  src="images/start-menu/my-computer-icon.png"
+                />
+                <input
+                  type="text"
+                  class="nav-address--bar"
+                  placeholder="My Computer"
+                />
+              </div>
+              <div class="go-arrow--wrapper">
+                <ion-icon
+                  class="go-arrow"
+                  name="arrow-forward-outline"
+                ></ion-icon>
+              </div>
+              <p class="go-text">Go</p>
+            </div>
+          </div>
+          <div class="my-computer-window--main">
+            <div class="my-computer-window--main-left">
+              <div class="system-tasks">
+                <div class="system-tasks-heading">
+                  <p class="my-computer--heading--text">System Tasks</p>
+                  <div class="small-circle--background">
+                    <ion-icon
+                      class="small-up-arrow"
+                      name="chevron-up-outline"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <div class="system-tasks--link-container">
+                  <a class="system--links" href="#"
+                    ><img
+                      src="images/other-assets/system-info.png"
+                      class="side-panel-icon"
+                    />View system information</a
+                  >
+                  <a class="system--links" href="#"
+                    ><img
+                      src="images/other-assets/add-or-remove.png"
+                      class="side-panel-icon"
+                    />Add or remove programs</a
+                  >
+                  <a class="system--links" href="#"
+                    ><img
+                      src="images/start-menu/ctrl-panel-icon.png"
+                      class="side-panel-icon"
+                    />Change a setting</a
+                  >
+                </div>
+              </div>
+              <div class="other-places">
+                <div class="other-places-heading">
+                  <p class="my-computer--heading--text">Other Places</p>
+                  <div class="small-circle--background">
+                    <ion-icon
+                      class="small-up-arrow"
+                      name="chevron-up-outline"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <div class="other-places--link-container">
+                  <a class="system--links" href="#">
+                    <img
+                      src="images/start-menu/network-places.png"
+                      class="side-panel-icon"
+                    />
+                    My Network Places</a
+                  >
+                  <a class="system--links" href="#"
+                    ><img
+                      src="images/start-menu/my-docs-icon.png"
+                      class="side-panel-icon"
+                    />
+                    My Documents</a
+                  >
+                  <a class="system--links" href="#"
+                    ><img
+                      src="images/other-assets/open-folder.png"
+                      class="side-panel-icon"
+                    />
+                    Shared Documents</a
+                  >
+                  <a class="system--links" href="#"
+                    ><img
+                      src="images/start-menu/ctrl-panel-icon.png"
+                      class="side-panel-icon"
+                    />
+                    Control Panel</a
+                  >
+                </div>
+              </div>
+              <div class="details-container">
+                <div class="details-heading">
+                  <p class="my-computer--heading--text">Details</p>
+                  <div class="small-circle--background">
+                    <ion-icon
+                      class="small-up-arrow"
+                      name="chevron-up-outline"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <p class="details--sub-heading">My Computer</p>
+                <p class="details--sub-sub-heading">System Folder</p>
+              </div>
+            </div>
+
+            <div class="my-computer-window--main-right">
+              <div class="files-stored">
+                <p class="files-stored--heading">
+                  Files Stored on This Computer
+                </p>
+                <div class="window-icon--container">
+                  <div class="window-icon">
+                    <img
+                      src="images/other-assets/shared-doc.png"
+                      class="window-icon-img"
+                    />
+                    <p class="window-icon-text">Shared Documents</p>
+                  </div>
+                  <div class="window-icon">
+                    <img
+                      src="images/other-assets/folder.png"
+                      class="window-icon-img"
+                    />
+                    <p class="window-icon-text">User's Documents</p>
+                  </div>
+                </div>
+              </div>
+              <div class="device-drives">
+                <p class="files-stored--heading">Device Drives</p>
+                <div class="window-icon--container">
+                  <div class="window-icon">
+                    <img
+                      class="window-icon-img"
+                      src="images/other-assets/hard-drive.png"
+                    />
+                    <p class="window-icon-text">WIN_XP(C:)</p>
+                  </div>
+                  <div class="window-icon">
+                    <img
+                      class="window-icon-img"
+                      src="images/other-assets/shared-drive.png"
+                    />
+                    <p class="window-icon-text">STORAGE(G:)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="device-drives--other">
+                <p class="files-stored--heading">Other</p>
+                <div class="window-icon--container">
+                  <div class="window-icon">
+                    <img
+                      class="window-icon-img"
+                      src="images/start-menu/ctrl-panel-icon.png"
+                    />
+                    <p class="window-icon-text">Control Panel</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="window--hidden recycling-window">
+          <div class="window-top">
+            <div class="recycling-window-top--left">
+              <img
+                class="recycling-bin-img-sm"
+                src="images/recycling-bin.png"
+                alt="Recycling bin"
+              />
+              <p class="window-top-text">Recycle Bin</p>
+            </div>
+            <div class="window-top-btns">
+              <button class="min-btn btn">_</button>
+              <button class="max-btn btn">❐</button>
+              <button class="close-btn btn close-btn--recycling-bin">✖</button>
+            </div>
+          </div>
+          <div class="window-main"></div>
+        </div>
+        <div class="limewire-window window--hidden">
+          <div class="limewire-window--top">
+            <div class="limewire-window--top-text">
+              LimeWire PRO 4.20.69 Setup
+            </div>
+            <div class="window-top-btns">
+              <div class="min-btn btn">_</div>
+              <div class="max-btn btn">❐</div>
+              <div class="close-btn btn close-limewire">✖</div>
+            </div>
+          </div>
+          <div class="limewire-window--main">
+            <div class="limewire-window--left">
+              <img
+                class="limewire-logo--main1"
+                src="images/other-assets/limewire.png"
+              />
+              <img
+                class="limewire-logo--main2"
+                src="images/other-assets/limewire.png"
+              />
+              <img
+                class="limewire-logo--main3"
+                src="images/other-assets/limewire.png"
+              />
+              <img
+                class="limewire-logo--main4"
+                src="images/other-assets/limewire.png"
+              />
+              <img
+                class="limewire-logo--main5"
+                src="images/other-assets/limewire.png"
+              />
+            </div>
+            <div class="limewire-window--right">
+              <h2 class="limewire-main--heading">Welcome to LimeWire PRO</h2>
+              <p class="limewire-main--text">
+                Thank you for purchasing LimeWire PRO, the most advanced virus
+                distribution program on the planet. Please click Next to begin
+                installation.
+              </p>
+            </div>
+            <div class="limewire-window--bottom">
+              <button class="next-btn">
+                <u class="text-bigger">N</u>ext&nbsp;<ion-icon
+                  name="chevron-forward-outline"
+                ></ion-icon>
+              </button>
+              <button class="cancel-btn close-limewire">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="window--hidden messenger-window">
+          <div class="messenger-window--top">
+            <div class="messenger-window--top-left">
+              <img
+                class="messenger-window--icon"
+                src="images/start-menu/messenger-icon.png"
+              />
+              <p class="window-top-text">MSN Messenger</p>
+            </div>
+            <div class="window-top-btns">
+              <button class="min-btn btn">_</button>
+              <button class="max-btn btn">❐</button>
+              <button class="close-btn btn messenger-window--hidden">✖</button>
+            </div>
+          </div>
+          <div class="messenger-window--main">
             <img
-              class="messenger-window--icon"
+              class="messenger-icon-main--top"
+              src="images/other-assets/messenger-icon-main.png"
+            />
+            <form class="messenger-sign-in">
+              <label for="email" class="messenger-email-label"
+                >E-mail address:</label
+              >
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                class="messenger-email--input"
+              />
+              <label for="password" class="messenger-password-label"
+                >Password:</label
+              >
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                class="messenger-password--input"
+              />
+              <div class="messenger-status">
+                <label for="status" class="messenger-status-label"
+                  >Status:</label
+                >
+                <select name="status" class="messenger-sign-in--options">
+                  <option value="online">Online</option>
+                  <option value="busy">Busy</option>
+                  <option value="brb">Be right back</option>
+                  <option value="away">Away</option>
+                  <option value="iac">In a call</option>
+                  <option value="otl">Out to lunch</option>
+                  <option value="offline">Appear offline</option>
+                </select>
+              </div>
+            </form>
+            <form class="messenger-sign-in-checkboxes">
+              <div class="option-wrapper">
+                <input type="checkbox" name="rememberme" value="rememberme" />
+                <label for="rememberme">Remember Me</label
+                ><a href="#" class="forget-me-link messenger-link"
+                  >(Forget Me)</a
+                >
+              </div>
+              <div class="option-wrapper">
+                <input
+                  type="checkbox"
+                  name="rememberpass"
+                  value="remeberpass"
+                />
+                <label for="rememberpass">Remember my Password</label>
+              </div>
+              <div class="option-wrapper">
+                <input type="checkbox" name="auto" value="auto" />
+                <label for="auto">Sign me in automatically</label>
+              </div>
+            </form>
+            <button class="messenger-sign-in--btn">Sign In</button>
+            <img
+              class="messenger-background"
               src="images/start-menu/messenger-icon.png"
             />
-            <p class="window-top-text">MSN Messenger</p>
-          </div>
-          <div class="window-top-btns">
-            <button class="min-btn btn">_</button>
-            <button class="max-btn btn">❐</button>
-            <button class="close-btn btn messenger-window--hidden">✖</button>
-          </div>
-        </div>
-        <div class="messenger-window--main">
-          <img
-            class="messenger-icon-main--top"
-            src="images/other-assets/messenger-icon-main.png"
-          />
-          <form class="messenger-sign-in">
-            <label for="email" class="messenger-email-label"
-              >E-mail address:</label
-            >
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email address"
-              class="messenger-email--input"
-            />
-            <label for="password" class="messenger-password-label"
-              >Password:</label
-            >
-            <input
-              type="password"
-              name="password"
-              placeholder="Enter your password"
-              class="messenger-password--input"
-            />
-            <div class="messenger-status">
-              <label for="status" class="messenger-status-label">Status:</label>
-              <select name="status" class="messenger-sign-in--options">
-                <option value="online">Online</option>
-                <option value="busy">Busy</option>
-                <option value="brb">Be right back</option>
-                <option value="away">Away</option>
-                <option value="iac">In a call</option>
-                <option value="otl">Out to lunch</option>
-                <option value="offline">Appear offline</option>
-              </select>
+            <div class="messenger-window--bottom-links">
+              <div class="messenger-window--bottom-links-left">
+                <a class="messenger-link" href="#">Forgot your password?</a>
+                <a class="messenger-link" href="#">Service status</a>
+              </div>
+              <a class="messenger-link" href="#">Get a new account</a>
             </div>
-          </form>
-          <form class="messenger-sign-in-checkboxes">
-            <div class="option-wrapper">
-              <input type="checkbox" name="rememberme" value="rememberme" />
-              <label for="rememberme">Remember Me</label
-              ><a href="#" class="forget-me-link messenger-link">(Forget Me)</a>
-            </div>
-            <div class="option-wrapper">
-              <input type="checkbox" name="rememberpass" value="remeberpass" />
-              <label for="rememberpass">Remember my Password</label>
-            </div>
-            <div class="option-wrapper">
-              <input type="checkbox" name="auto" value="auto" />
-              <label for="auto">Sign me in automatically</label>
-            </div>
-          </form>
-          <button class="messenger-sign-in--btn">Sign In</button>
-          <img
-            class="messenger-background"
-            src="images/start-menu/messenger-icon.png"
-          />
-          <div class="messenger-window--bottom-links">
-            <div class="messenger-window--bottom-links-left">
-              <a class="messenger-link" href="#">Forgot your password?</a>
-              <a class="messenger-link" href="#">Service status</a>
-            </div>
-            <a class="messenger-link" href="#">Get a new account</a>
           </div>
         </div>
-      </div>
 
-      <div class="window--hidden notepad-window">
-        <div class="notepad-window--top">
-          <div class="notepad-window--top-left">
+        <div class="window--hidden notepad-window">
+          <div class="notepad-window--top">
+            <div class="notepad-window--top-left">
+              <img
+                class="notepad-window--icon"
+                src="images/start-menu/notepad-icon.png"
+              />
+              <p class="window-top-text">Notepad</p>
+            </div>
+            <div class="window-top-btns">
+              <button class="min-btn btn">_</button>
+              <button class="max-btn btn">❐</button>
+              <button class="close-btn btn notepad-window--hidden">✖</button>
+            </div>
+          </div>
+          <div class="notepad-window--main">
+            <div class="notepad-window--main-top">
+              <a class="notepad-top--links" href="#">File</a>
+              <a class="notepad-top--links" href="#">Edit</a>
+              <a class="notepad-top--links" href="#">Format</a>
+              <a class="notepad-top--links" href="#">View</a>
+              <a class="notepad-top--links" href="#">Help</a>
+            </div>
+            <textarea></textarea>
+          </div>
+        </div>
+        <div class="window--hidden calc-window">
+          <div class="calc-window-top">
+            <div class="calc-window-top-left">
+              <img
+                class="calc-icon-sm"
+                src="images/start-menu/calculator-icon-sm.png"
+              />
+              <p class="window-top-text">Calculator</p>
+            </div>
+            <div class="window-top-btns">
+              <button class="min-btn btn">_</button>
+              <button class="max-btn btn">❐</button>
+              <button class="close-btn btn calc-window--hidden">✖</button>
+            </div>
+          </div>
+          <div class="calc-window-main">
+            <div class="calc-window-main-top">
+              <a class="window-btn" href="#">Edit</a
+              ><a class="window-btn" href="#">View</a
+              ><a class="window-btn" href="#">Help</a>
+            </div>
+            <div class="calc-display">
+              <div class="previous-operand" id="previous-operand"></div>
+              <div class="current-operand" id="current-operand">0</div>
+            </div>
+            <div class="button-container">
+              <div class="btn-container-top">
+                <button class="blank" disabled></button>
+                <button class="backspace top-btn" id="backspace-btn">
+                  Backspace
+                </button>
+                <button class="ce top-btn">CE</button>
+                <button class="c top-btn" id="all-clear-btn">C</button>
+              </div>
+              <div class="btn-container-main">
+                <button class="red-btn operation--btn">MC</button>
+                <button class="operation--btn" data-number>7</button>
+                <button class="operation--btn" data-number>8</button>
+                <button class="operation--btn" data-number>9</button>
+                <button class="red-btn operation--btn" data-operation>/</button>
+                <button class="operation--btn">sqrt</button>
+                <button class="red-btn operation--btn">MR</button>
+                <button class="operation--btn" data-number>4</button>
+                <button class="operation--btn" data-number>5</button>
+                <button class="operation--btn" data-number>6</button>
+                <button class="red-btn operation--btn" data-operation>*</button>
+                <button class="operation--btn" data-operation>%</button>
+                <button class="red-btn operation--btn">MS</button>
+                <button class="operation--btn" data-number>1</button>
+                <button class="operation--btn" data-number>2</button>
+                <button class="operation--btn" data-number>3</button>
+                <button class="red-btn operation--btn" data-operation>-</button>
+                <button class="operation--btn">1/x</button>
+                <button class="red-btn operation--btn">M+</button>
+                <button class="operation--btn" data-number>0</button>
+                <button class="operation--btn">+/-</button>
+                <button class="red-btn operation--btn" id="decimal-btn">
+                  .
+                </button>
+                <button class="red-btn operation--btn" data-operation>+</button>
+                <button class="red-btn operation--btn" id="equals-btn">
+                  =
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="error-modal window--hidden">
+          <div class="error-modal--top">
+            <p class="window-top-text error-heading">Local Disc (C:)</p>
+            <div class="window-top-btns">
+              <button class="close-btn btn close-error--btn">✖</button>
+            </div>
+          </div>
+
+          <div class="error-modal--main">
+            <div class="error-main--content-wrapper">
+              <img
+                class="error-icon"
+                src="images/other-assets/error-icon.png"
+                alt="error icon"
+              />
+              <div class="error-main--text-wrapper">
+                <p class="error-main--text">
+                  Some system files are missing or corrupted.
+                </p>
+                <p class="error-main--text">Access is denied.</p>
+                <p class="error-main--text">
+                  Please contact your system administrator.
+                </p>
+              </div>
+            </div>
+            <button class="error-ok--btn">OK</button>
+          </div>
+        </div>
+
+        <div class="start-menu start-menu--hidden">
+          <div class="start-menu-top">
             <img
-              class="notepad-window--icon"
-              src="images/start-menu/notepad-icon.png"
+              class="profile-img"
+              src="images/start-menu/chess-profile-img.jpg"
             />
-            <p class="window-top-text">Notepad</p>
+            <p class="username-text">User</p>
           </div>
-          <div class="window-top-btns">
-            <button class="min-btn btn">_</button>
-            <button class="max-btn btn">❐</button>
-            <button class="close-btn btn notepad-window--hidden">✖</button>
-          </div>
-        </div>
-        <div class="notepad-window--main">
-          <div class="notepad-window--main-top">
-            <a class="notepad-top--links" href="#">File</a>
-            <a class="notepad-top--links" href="#">Edit</a>
-            <a class="notepad-top--links" href="#">Format</a>
-            <a class="notepad-top--links" href="#">View</a>
-            <a class="notepad-top--links" href="#">Help</a>
-          </div>
-          <textarea></textarea>
-        </div>
-      </div>
-      <div class="window--hidden calc-window">
-        <div class="calc-window-top">
-          <div class="calc-window-top-left">
-            <img
-              class="calc-icon-sm"
-              src="images/start-menu/calculator-icon-sm.png"
-            />
-            <p class="window-top-text">Calculator</p>
-          </div>
-          <div class="window-top-btns">
-            <button class="min-btn btn">_</button>
-            <button class="max-btn btn">❐</button>
-            <button class="close-btn btn calc-window--hidden">✖</button>
-          </div>
-        </div>
-        <div class="calc-window-main">
-          <div class="calc-window-main-top">
-            <a class="window-btn" href="#">Edit</a
-            ><a class="window-btn" href="#">View</a
-            ><a class="window-btn" href="#">Help</a>
-          </div>
-          <div class="calc-display">
-            <div class="previous-operand" id="previous-operand"></div>
-            <div class="current-operand" id="current-operand">0</div>
-          </div>
-          <div class="button-container">
-            <div class="btn-container-top">
-              <button class="blank" disabled></button>
-              <button class="backspace top-btn" id="backspace-btn">
-                Backspace
-              </button>
-              <button class="ce top-btn">CE</button>
-              <button class="c top-btn" id="all-clear-btn">C</button>
+          <div class="start-menu-main">
+            <div class="start-menu-main-left">
+              <a href="#" class="start-menu-cell">
+                <div class="menu-left-cell1 left-cell open-error--modal">
+                  <img
+                    class="ie-icon menu-icon"
+                    src="images/start-menu/ie-icon.png"
+                  />Internet
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-left-cell2 left-cell open-error--modal">
+                  <img
+                    class="email-icon menu-icon"
+                    src="images/start-menu/email-icon.png"
+                  />E-mail
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-left-cell3 left-cell">
+                  <img
+                    class="commandprompt-icon menu-icon"
+                    src="images/start-menu/command-prompt-icon.png"
+                  />Command Prompt
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-left-cell4 left-cell open-error--modal">
+                  <img
+                    class="msn-icon menu-icon"
+                    src="images/start-menu/msn-icon.png"
+                  />MSN
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-left-cell5 left-cell open-error--modal">
+                  <img
+                    class="media-player-icon menu-icon"
+                    src="images/start-menu/media-player-icon.png"
+                  />Windows Media Player
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell open-messenger-btn">
+                <div class="menu-left-cell6 left-cell">
+                  <img
+                    class="messenger-icon menu-icon"
+                    src="images/start-menu/messenger-icon.png"
+                  />Microsoft Messenger
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell open-notepad-btn">
+                <div class="menu-left-cell7 left-cell">
+                  <img
+                    class="notepad-icon menu-icon"
+                    src="images/start-menu/notepad-icon.png"
+                  />Notepad
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell open-calc-btn">
+                <div class="menu-left-cell8 left-cell">
+                  <img
+                    class="calculator-icon menu-icon"
+                    src="images/start-menu/calculator-icon-sm.png"
+                  />Calculator
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-left-cell9 left-cell">
+                  All Programs
+                  <ion-icon class="icon green-arrow" name="play"></ion-icon>
+                </div>
+              </a>
             </div>
-            <div class="btn-container-main">
-              <button class="red-btn operation--btn">MC</button>
-              <button class="operation--btn" data-number>7</button>
-              <button class="operation--btn" data-number>8</button>
-              <button class="operation--btn" data-number>9</button>
-              <button class="red-btn operation--btn" data-operation>/</button>
-              <button class="operation--btn">sqrt</button>
-              <button class="red-btn operation--btn">MR</button>
-              <button class="operation--btn" data-number>4</button>
-              <button class="operation--btn" data-number>5</button>
-              <button class="operation--btn" data-number>6</button>
-              <button class="red-btn operation--btn" data-operation>*</button>
-              <button class="operation--btn" data-operation>%</button>
-              <button class="red-btn operation--btn">MS</button>
-              <button class="operation--btn" data-number>1</button>
-              <button class="operation--btn" data-number>2</button>
-              <button class="operation--btn" data-number>3</button>
-              <button class="red-btn operation--btn" data-operation>-</button>
-              <button class="operation--btn">1/x</button>
-              <button class="red-btn operation--btn">M+</button>
-              <button class="operation--btn" data-number>0</button>
-              <button class="operation--btn">+/-</button>
-              <button class="red-btn operation--btn" id="decimal-btn">.</button>
-              <button class="red-btn operation--btn" data-operation>+</button>
-              <button class="red-btn operation--btn" id="equals-btn">=</button>
+
+            <div class="start-menu-main-right">
+              <a href="#" class="start-menu-cell open-error--modal">
+                <div class="menu-right-cell1 right-cell">
+                  <img
+                    class="my-docs menu-icon-sm"
+                    src="images/start-menu/my-docs-icon.png"
+                  />My Documents
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell open-error--modal">
+                <div class="menu-right-cell2 right-cell">
+                  <img
+                    class="recent-docs menu-icon-sm"
+                    src="images/start-menu/recent-docs-icon.png"
+                  />My Recent Documents
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell open-error--modal">
+                <div class="menu-right-cell3 right-cell">
+                  <img
+                    class="my-pics menu-icon-sm"
+                    src="images/start-menu/my-pics-icon.png"
+                  />My Pictures
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell open-error--modal">
+                <div class="menu-right-cell4 right-cell">
+                  <img
+                    class="my-music menu-icon-sm"
+                    src="images/start-menu/my-music-icon.png"
+                  />My Music
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-right-cell5 right-cell">
+                  <img
+                    class="my-computer menu-icon-sm"
+                    src="images/start-menu/my-computer-icon.png"
+                  />My Computer
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-right-cell6 right-cell open-error--modal">
+                  <img
+                    class="ctrl-panel menu-icon-sm"
+                    src="images/start-menu/ctrl-panel-icon.png"
+                  />Control Panel
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-right-cell7 right-cell open-error--modal">
+                  <img
+                    class="set-default menu-icon-sm"
+                    src="images/start-menu/default-programs-icon.png"
+                  />Set Program Access and Defaults
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-right-cell8 right-cell open-error--modal">
+                  <img
+                    class="printer menu-icon-sm"
+                    src="images/start-menu/printer-icon.png"
+                  />Printers and Faxes
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-right-cell9 right-cell open-error--modal">
+                  <img
+                    class="help-icon menu-icon-sm"
+                    src="images/start-menu/help-icon.png"
+                  />Help and Support
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-right-cell10 right-cell open-error--modal">
+                  <img
+                    class="search-icon menu-icon-sm"
+                    src="images/start-menu/search-icon.png"
+                  />Search
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="menu-right-cell11 right-cell">
+                  <img
+                    class="run-icon menu-icon-sm"
+                    src="images/start-menu/run-icon.png"
+                  />Run...
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="start-menu-bottom">
+            <div class="bottom-icons">
+              <a href="#" class="start-menu-cell">
+                <div class="log-off">
+                  <ion-icon class="log-off-icon" name="key-outline"></ion-icon>
+                  <p class="log-off-text">Log Off</p>
+                </div>
+              </a>
+              <a href="#" class="start-menu-cell">
+                <div class="turn-off">
+                  <ion-icon
+                    class="turn-off-icon"
+                    name="power-outline"
+                  ></ion-icon>
+                  <p class="turn-off-text">Turn Off Computer</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="error-modal window--hidden">
-        <div class="error-modal--top">
-          <p class="window-top-text error-heading">Local Disc (C:)</p>
-          <div class="window-top-btns">
-            <button class="close-btn btn close-error--btn">✖</button>
-          </div>
-        </div>
-
-        <div class="error-modal--main">
-          <div class="error-main--content-wrapper">
-            <img
-              class="error-icon"
-              src="images/other-assets/error-icon.png"
-              alt="error icon"
-            />
-            <div class="error-main--text-wrapper">
-              <p class="error-main--text">
-                Some system files are missing or corrupted.
-              </p>
-              <p class="error-main--text">Access is denied.</p>
-              <p class="error-main--text">
-                Please contact your system administrator.
-              </p>
-            </div>
-          </div>
-          <button class="error-ok--btn">OK</button>
-        </div>
-      </div>
-
-      <div class="start-menu start-menu--hidden">
-        <div class="start-menu-top">
-          <img
-            class="profile-img"
-            src="images/start-menu/chess-profile-img.jpg"
-          />
-          <p class="username-text">User</p>
-        </div>
-        <div class="start-menu-main">
-          <div class="start-menu-main-left">
-            <a href="#" class="start-menu-cell">
-              <div class="menu-left-cell1 left-cell open-error--modal">
-                <img
-                  class="ie-icon menu-icon"
-                  src="images/start-menu/ie-icon.png"
-                />Internet
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-left-cell2 left-cell open-error--modal">
-                <img
-                  class="email-icon menu-icon"
-                  src="images/start-menu/email-icon.png"
-                />E-mail
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-left-cell3 left-cell">
-                <img
-                  class="commandprompt-icon menu-icon"
-                  src="images/start-menu/command-prompt-icon.png"
-                />Command Prompt
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-left-cell4 left-cell open-error--modal">
-                <img
-                  class="msn-icon menu-icon"
-                  src="images/start-menu/msn-icon.png"
-                />MSN
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-left-cell5 left-cell open-error--modal">
-                <img
-                  class="media-player-icon menu-icon"
-                  src="images/start-menu/media-player-icon.png"
-                />Windows Media Player
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell open-messenger-btn">
-              <div class="menu-left-cell6 left-cell">
-                <img
-                  class="messenger-icon menu-icon"
-                  src="images/start-menu/messenger-icon.png"
-                />Microsoft Messenger
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell open-notepad-btn">
-              <div class="menu-left-cell7 left-cell">
-                <img
-                  class="notepad-icon menu-icon"
-                  src="images/start-menu/notepad-icon.png"
-                />Notepad
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell open-calc-btn">
-              <div class="menu-left-cell8 left-cell">
-                <img
-                  class="calculator-icon menu-icon"
-                  src="images/start-menu/calculator-icon-sm.png"
-                />Calculator
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-left-cell9 left-cell">
-                All Programs
-                <ion-icon class="icon green-arrow" name="play"></ion-icon>
-              </div>
-            </a>
-          </div>
-
-          <div class="start-menu-main-right">
-            <a href="#" class="start-menu-cell open-error--modal">
-              <div class="menu-right-cell1 right-cell">
-                <img
-                  class="my-docs menu-icon-sm"
-                  src="images/start-menu/my-docs-icon.png"
-                />My Documents
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell open-error--modal">
-              <div class="menu-right-cell2 right-cell">
-                <img
-                  class="recent-docs menu-icon-sm"
-                  src="images/start-menu/recent-docs-icon.png"
-                />My Recent Documents
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell open-error--modal">
-              <div class="menu-right-cell3 right-cell">
-                <img
-                  class="my-pics menu-icon-sm"
-                  src="images/start-menu/my-pics-icon.png"
-                />My Pictures
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell open-error--modal">
-              <div class="menu-right-cell4 right-cell">
-                <img
-                  class="my-music menu-icon-sm"
-                  src="images/start-menu/my-music-icon.png"
-                />My Music
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-right-cell5 right-cell">
-                <img
-                  class="my-computer menu-icon-sm"
-                  src="images/start-menu/my-computer-icon.png"
-                />My Computer
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-right-cell6 right-cell open-error--modal">
-                <img
-                  class="ctrl-panel menu-icon-sm"
-                  src="images/start-menu/ctrl-panel-icon.png"
-                />Control Panel
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-right-cell7 right-cell open-error--modal">
-                <img
-                  class="set-default menu-icon-sm"
-                  src="images/start-menu/default-programs-icon.png"
-                />Set Program Access and Defaults
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-right-cell8 right-cell open-error--modal">
-                <img
-                  class="printer menu-icon-sm"
-                  src="images/start-menu/printer-icon.png"
-                />Printers and Faxes
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-right-cell9 right-cell open-error--modal">
-                <img
-                  class="help-icon menu-icon-sm"
-                  src="images/start-menu/help-icon.png"
-                />Help and Support
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-right-cell10 right-cell open-error--modal">
-                <img
-                  class="search-icon menu-icon-sm"
-                  src="images/start-menu/search-icon.png"
-                />Search
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="menu-right-cell11 right-cell">
-                <img
-                  class="run-icon menu-icon-sm"
-                  src="images/start-menu/run-icon.png"
-                />Run...
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="start-menu-bottom">
-          <div class="bottom-icons">
-            <a href="#" class="start-menu-cell">
-              <div class="log-off">
-                <ion-icon class="log-off-icon" name="key-outline"></ion-icon>
-                <p class="log-off-text">Log Off</p>
-              </div>
-            </a>
-            <a href="#" class="start-menu-cell">
-              <div class="turn-off">
-                <ion-icon class="turn-off-icon" name="power-outline"></ion-icon>
-                <p class="turn-off-text">Turn Off Computer</p>
-              </div>
-            </a>
+        <div class="overlay overlay--hidden"></div>
+        <div class="taskbar">
+          <button class="start start-btn">
+            <img class="win-logo" src="images/other-assets/windows-logo.png" />
+            start
+          </button>
+          <div class="taskbar-right">
+            <span class="time"></span>
           </div>
         </div>
       </div>
-      <div class="overlay overlay--hidden"></div>
-      <div class="taskbar">
-        <button class="start start-btn">
-          <img class="win-logo" src="images/other-assets/windows-logo.png" />
-          start
-        </button>
-        <div class="taskbar-right">
-          <span class="time"></span>
-        </div>
-      </div>
-    </div>
+    </main>
     <script src="src/script.js"></script>
     <script src="src/calculator-script.js"></script>
     <script

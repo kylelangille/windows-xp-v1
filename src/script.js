@@ -90,6 +90,7 @@ btnCloseLimeWireCancel.addEventListener("click", closeLimewire);
 
 /////////////////////////////////////////////////////////
 // START MENU
+
 // Opening and Closing Start Menu
 const startMenu = document.querySelector(".start-menu");
 const startMenuBtn = document.querySelector(".start-btn");
@@ -228,27 +229,37 @@ const loadingScreen = document.querySelector(".loading-screen");
 const loadingBar = document.querySelector(".loading-bar");
 const userProfile = document.querySelector(".login-screen--user-profile");
 const startupScreen = document.querySelector(".login-screen");
+const bootBtn = document.querySelector(".boot-btn");
+const bootScreen = document.querySelector(".boot-screen");
 const startupSound = new Audio("../sounds/startup.wav");
 const logOffSound = new Audio("../sounds/logoffsound.wav");
 const logInSound = new Audio("../sounds/logonsound.wav");
+const startSound = new Audio("../sounds/start.wav");
 
-const loadingBarProgress = (progress) => {
-  loadingBar.style.width = `${progress}%`;
+const bootPC = () => {
+  startSound.play();
+  bootScreen.classList.add("window--hidden");
+  loadingScreen.classList.remove("window--hidden");
+  const loadingBarProgress = (progress) => {
+    loadingBar.style.width = `${progress}%`;
+  };
+
+  setTimeout(() => loadingBarProgress(22), 1000);
+  setTimeout(() => loadingBarProgress(45), 2000);
+  setTimeout(() => loadingBarProgress(85), 3600);
+  setTimeout(() => loadingBarProgress(98), 4500);
+  setTimeout(() => loadingBarProgress(100), 5000);
+
+  const endLoading = () => {
+    loadingScreen.classList.add("window--hidden");
+    startupScreen.classList.remove("window--hidden");
+    startupSound.play();
+  };
+
+  setTimeout(endLoading, 5000);
 };
 
-setTimeout(() => loadingBarProgress(22), 1000);
-setTimeout(() => loadingBarProgress(45), 2000);
-setTimeout(() => loadingBarProgress(85), 3600);
-setTimeout(() => loadingBarProgress(98), 4500);
-setTimeout(() => loadingBarProgress(100), 5000);
-
-const endLoading = () => {
-  loadingScreen.classList.add("window--hidden");
-  startupScreen.classList.remove("window--hidden");
-  startupSound.play();
-};
-
-setTimeout(endLoading, 5000);
+bootBtn.addEventListener("click", bootPC);
 
 const openWindows = () => {
   setTimeout(() => {
