@@ -42,6 +42,7 @@ const btnOpenMyComputer = document.querySelector(".my-computer--open");
 
 const openMyComputer = () => {
   myComputerWindow.classList.remove("window--hidden");
+  startSound.play();
 };
 
 const closeMyComputer = () => {
@@ -60,6 +61,7 @@ const btnOpenRecyclingBin = document.querySelector(".recycling-window--open");
 
 const openRecyclingBin = function () {
   recyclingBinWindow.classList.remove("window--hidden");
+  startSound.play();
 };
 
 const closeRecyclingBin = function () {
@@ -78,6 +80,7 @@ const btnCloseLimeWireCancel = document.querySelector(".cancel-btn");
 
 const openLimewire = function () {
   limewireWindow.classList.remove("window--hidden");
+  startSound.play();
 };
 
 const closeLimewire = function () {
@@ -134,6 +137,7 @@ const calcWindow = document.querySelector(".calc-window");
 
 const openCalc = function () {
   calcWindow.classList.remove("window--hidden");
+  startSound.play();
   closeStartMenu();
 };
 
@@ -153,6 +157,7 @@ const notepadWindow = document.querySelector(".notepad-window");
 
 const openNotepad = function () {
   notepadWindow.classList.remove("window--hidden");
+  startSound.play();
   closeStartMenu();
 };
 
@@ -173,6 +178,7 @@ const messengerWindow = document.querySelector(".messenger-window");
 
 const openMessenger = function () {
   messengerWindow.classList.remove("window--hidden");
+  startSound.play();
   closeStartMenu();
 };
 
@@ -183,6 +189,18 @@ const closeMessenger = function () {
 openMessengerBtn.addEventListener("click", openMessenger);
 
 closeMessengerBtn.addEventListener("click", closeMessenger);
+
+///////////////////////////////////////////
+// Opening and closing My Computer
+const myComputerSM = document.querySelector(".open-my-computer--sm");
+
+const openMyComputerSM = () => {
+  myComputerWindow.classList.remove("window--hidden");
+  startSound.play();
+  closeStartMenu();
+};
+
+myComputerSM.addEventListener("click", openMyComputerSM);
 
 ////////////////////////////////////////////
 //ERROR MODAL
