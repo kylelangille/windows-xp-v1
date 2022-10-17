@@ -1,10 +1,12 @@
-# windows-xp-v1
+# Fwindows XP
+
+Live demo [here](https://fwindows-xp.netlify.app/) 👈
 
 ## What's this?
 
 A bad rip-off of a phenomenal project I saw on /r/learnprogramming called "puter": https://puter.com/
 
-I figured I'd try my hand at recreating this project, though a much much less interactive version of it, in a Windows XP format using only HTML, CSS, and vanilla JavaScript.
+I figured I'd try my hand at recreating this project, though a much much less interactive version of it, in a Windows XP format using only HTML, CSS, and Vanilla JavaScript.
 
 I've found a version of what I'm trying to achieve done in React.js that's [incredible](https://winxp.vercel.app/). If I can do 5% of what this person has built, I'd be pretty ok with it. Mad props to this [guy](https://github.com/ShizukuIchi).
 
