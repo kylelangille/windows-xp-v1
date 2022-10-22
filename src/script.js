@@ -149,6 +149,25 @@ openCalcBtn.addEventListener("click", openCalc);
 closeCalcBtn.addEventListener("click", closeCalc);
 
 ///////////////////////////////////////
+// Opening and closing the run window
+
+const openRunBtn = document.querySelector(".open-run-window");
+const runWindow = document.querySelector(".run-window");
+const closeRunBtn = document.querySelector(".run-window--hidden");
+
+const openRunWindow = () => {
+  runWindow.classList.remove("window--hidden");
+  closeStartMenu();
+};
+
+const closeRunWindow = () => {
+  runWindow.classList.add("window--hidden");
+};
+
+openRunBtn.addEventListener("click", openRunWindow);
+closeRunBtn.addEventListener("click", closeRunWindow);
+
+///////////////////////////////////////
 // Opening and closing the notepad
 
 const openNotepadBtn = document.querySelector(".open-notepad-btn");

@@ -534,6 +534,38 @@
         </div>
       </div>
 
+      <div class="run-window window--hidden">
+        <div class="run-window--top">
+          <div class="run-window--top-left">
+            <p class="window-top-text">Run</p>
+          </div>
+          <div class="run-window--top--right">
+            <div class="window-top-btns">
+              <button class="max-btn btn">?</button>
+              <button class="close-btn btn run-window--hidden">✖</button>
+            </div>
+          </div>
+        </div>
+        <div class="run-window--main">
+          <div class="run-window--main-content-wrapper">
+            <img class="run-icon--img" src="images/start-menu/run-icon.png" />
+            <p class="run-main--text">
+              Type the name of a program, folder, document, or Internet
+              resource, and Windows will open it for you.
+            </p>
+          </div>
+          <div class="run-window--input-wrapper">
+            <label for="run">Open:</label>
+            <input name="run" type="text" />
+          </div>
+          <div class="run-window--controls">
+            <button class="next-btn">Ok</button>
+            <button class="next-btn">Cancel</button>
+            <button class="next-btn">Browse</button>
+          </div>
+        </div>
+      </div>
+
       <div class="window--hidden notepad-window">
         <div class="notepad-window--top">
           <div class="notepad-window--top-left">
@@ -817,7 +849,7 @@
               </div>
             </a>
             <a href="#" class="start-menu-cell">
-              <div class="menu-right-cell11 right-cell">
+              <div class="menu-right-cell11 right-cell open-run-window">
                 <img
                   class="run-icon menu-icon-sm"
                   src="images/start-menu/run-icon.png"
