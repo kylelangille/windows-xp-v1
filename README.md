@@ -1,7 +1,8 @@
 # Fwindows XP
 
 Live demo [here](https://fwindows-xp.netlify.app/) 👈
-(Note: Netlify deployment may be a couple commit behind...)
+
+(Note: Netlify deployment may be a couple commits behind...)
 
 ## What's this?
 
