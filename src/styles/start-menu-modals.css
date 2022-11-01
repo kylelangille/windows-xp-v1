@@ -307,3 +307,31 @@
   margin-top: 3.7rem;
   justify-content: flex-end;
 }
+
+/* ******************** */
+/*   SHUT DOWN MODAL    */
+/* ******************** */
+.shut-down--modal {
+  border: 1px solid #000829;
+}
+
+.shut-down--modal--top {
+  background: #003399;
+  border-bottom: 1px solid #c2e3ff;
+}
+
+.shut-down--modal-logo {
+}
+
+.shut-down--modal--main {
+}
+
+.shut-down--icon-container {
+}
+
+.shut-down--icon-text {
+}
+
+.shut-down--modal--bottom {
+  background: #00329b;
+}
