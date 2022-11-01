@@ -512,7 +512,9 @@ body {
   transition: width 0.4s ease;
 }
 
-/* boot */
+/* **************** */
+/*    BOOT SCREEN   */
+/* **************** */
 .boot-screen {
   height: 100vh;
   width: 100vw;
@@ -573,6 +575,74 @@ body {
   color: #d8d8d8;
   letter-spacing: 0.5rem;
   font-size: 2rem;
+}
+
+.window--hidden {
+  display: none;
+}
+
+/* **************** */
+/* SHUT DOWN SCREEN */
+/* **************** */
+.shut-down--screen {
+  height: 100vh;
+  width: 100vw;
+  z-index: 10000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #5a7edc;
+}
+
+.shut-down--screen-main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.shut-down--logo-wrapper {
+  display: flex;
+  margin-left: 10rem;
+}
+
+.shut-down--msoft-text {
+  margin-top: 9rem;
+  margin-right: 1rem;
+  color: #eef6fd;
+  font-size: 2.4rem;
+}
+
+.shut-down--logo {
+  height: 12rem;
+  width: 12rem;
+}
+
+.shut-down--text-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -21rem;
+  margin-left: 16rem;
+}
+
+.shut-down--bg-text {
+  font-size: 6rem;
+  color: #eef6fd;
+  user-select: none;
+}
+
+.shut-down--sm-text {
+  font-size: 4.2rem;
+  color: #ed671d;
+  user-select: none;
+}
+
+.shut-down--message {
+  font-size: 4rem;
+  color: #eef6fd;
+  user-select: none;
+  margin-top: -8rem;
+  text-align: center;
 }
 
 .window--hidden {

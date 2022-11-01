@@ -319,3 +319,37 @@ const logOff = () => {
 };
 
 logOffBtn.addEventListener("click", logOff);
+
+//Shut Down
+
+const shutDownBtn = document.querySelector(".turn-off-pc");
+const shutDownBtnLogin = document.querySelector(".login-screen--turn-off");
+const shutDownScreen = document.querySelector(".shut-down--screen");
+const shutDownSound = new Audio("../sounds/shutdown.wav");
+
+const shutDownPC = () => {
+  shutDownScreen.classList.remove("window--hidden");
+  closeStartMenu();
+  shutDownSound.play();
+  setTimeout(() => {
+    shutDownScreen.classList.add("window--hidden");
+  }, 4000);
+  setTimeout(() => {
+    bootScreen.classList.remove("window--hidden");
+  }, 4000);
+};
+
+const shutDownPCLogin = () => {
+  startupScreen.classList.add("window--hidden");
+  shutDownScreen.classList.remove("window--hidden");
+  shutDownSound.play();
+  setTimeout(() => {
+    shutDownScreen.classList.add("window--hidden");
+  }, 4000);
+  setTimeout(() => {
+    bootScreen.classList.remove("window--hidden");
+  }, 4000);
+};
+
+shutDownBtn.addEventListener("click", shutDownPC);
+shutDownBtnLogin.addEventListener("click", shutDownPCLogin);
