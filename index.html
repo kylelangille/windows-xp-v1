@@ -28,6 +28,7 @@
   </head>
   <body>
     <main class="main">
+      <div class="background window--hidden"></div>
       <div class="boot-screen">
         <button class="boot-btn">
           <ion-icon class="boot-btn--icon" name="power-outline"></ion-icon>
@@ -732,10 +733,9 @@
           <button class="error-ok--btn">OK</button>
         </div>
       </div>
-
       <div class="shut-down--modal window--hidden">
         <div class="shut-down--modal--top">
-          <p>Turn off computer</p>
+          <p class="shut-down--modal--top-text">Turn off computer</p>
           <img
             src="images/other-assets/windows-logo.png"
             alt="windows-logo"
@@ -743,33 +743,35 @@
           />
         </div>
         <div class="shut-down--modal--main">
-          <div class="shut-down--icon-container">
-            <img
-              src="images/other-assets/stand-by-btn.png"
-              alt="stand by icon"
-              class="stand-by--icon"
-            />
-            <p class="shut-down--icon-text"><u>S</u>tand by</p>
-          </div>
-          <div class="shut-down--icon-container">
-            <img
-              src="images/other-assets/power-off-btn.png"
-              alt="turn off icon"
-              class="turn-off-icon--alt"
-            />
-            <p class="shut-down--icon-text">T<u>u</u>rn Off</p>
-          </div>
-          <div class="shut-down--icon-container">
-            <img
-              src="images/other-assets/restart-btn.png"
-              alt="restart icon"
-              class="restart--icon"
-            />
-            <p class="shut-down--icon-text"><u>R</u>estart</p>
+          <div class="shut-down--controls-container">
+            <div class="shut-down--icon-container">
+              <img
+                src="images/other-assets/stand-by-btn.png"
+                alt="stand by icon"
+                class="stand-by--icon"
+              />
+              <p class="shut-down--icon-text"><u>S</u>tand by</p>
+            </div>
+            <div class="shut-down--icon-container turn-off-pc">
+              <img
+                src="images/other-assets/power-off-btn.png"
+                alt="turn off icon"
+                class="turn-off-icon--alt"
+              />
+              <p class="shut-down--icon-text">T<u>u</u>rn Off</p>
+            </div>
+            <div class="shut-down--icon-container">
+              <img
+                src="images/other-assets/restart-btn.png"
+                alt="restart icon"
+                class="restart--icon"
+              />
+              <p class="shut-down--icon-text"><u>R</u>estart</p>
+            </div>
           </div>
         </div>
         <div class="shut-down--modal--bottom">
-          <button>Cancel</button>
+          <button class="shut-down--cancel-btn">Cancel</button>
         </div>
       </div>
 
@@ -954,7 +956,7 @@
                 <p class="log-off-text">Log Off</p>
               </div>
             </a>
-            <a href="#" class="start-menu-cell turn-off-pc">
+            <a href="#" class="start-menu-cell open-shut-down--modal">
               <div class="turn-off">
                 <ion-icon class="turn-off-icon" name="power-outline"></ion-icon>
                 <p class="turn-off-text">Turn Off Computer</p>

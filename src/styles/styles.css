@@ -39,11 +39,6 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background: url("/images/background.jpg");
-  background-size: cover;
-}
-
 /* ****************** */
 /* MAIN PAGE ELEMENTS */
 /* ****************** */
@@ -58,8 +53,9 @@ body {
 }
 
 .background {
-  z-index: 0;
-  overflow: hidden;
+  background: url("/images/background.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
 .overlay {

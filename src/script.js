@@ -292,6 +292,7 @@ const startupSound = new Audio("../sounds/startup.wav");
 const logOffSound = new Audio("../sounds/logoffsound.wav");
 const logInSound = new Audio("../sounds/logonsound.wav");
 const startSound = new Audio("../sounds/start.wav");
+const background = document.querySelector(".background");
 
 const bootPC = () => {
   startSound.play();
@@ -319,10 +320,9 @@ const bootPC = () => {
 bootBtn.addEventListener("click", bootPC);
 
 const openWindows = () => {
-  setTimeout(() => {
-    startupScreen.classList.add("window--hidden");
-    logInSound.play();
-  }, 300);
+  background.classList.remove("window--hidden");
+  startupScreen.classList.add("window--hidden");
+  logInSound.play();
 };
 
 userProfile.addEventListener("click", openWindows);
@@ -346,9 +346,26 @@ const shutDownBtn = document.querySelector(".turn-off-pc");
 const shutDownBtnLogin = document.querySelector(".login-screen--turn-off");
 const shutDownScreen = document.querySelector(".shut-down--screen");
 const shutDownSound = new Audio("../sounds/shutdown.wav");
+const shutDownModal = document.querySelector(".shut-down--modal");
+const shutDownModalCancel = document.querySelector(".shut-down--cancel-btn");
+const openShutDownModalBtn = document.querySelector(".open-shut-down--modal");
+
+const openShutDownModal = () => {
+  shutDownModal.classList.remove("window--hidden");
+  closeStartMenu();
+};
+
+const closeShutDownModal = () => {
+  shutDownModal.classList.add("window--hidden");
+};
+
+openShutDownModalBtn.addEventListener("click", openShutDownModal);
+shutDownModalCancel.addEventListener("click", closeShutDownModal);
 
 const shutDownPC = () => {
+  background.classList.add("window--hidden");
   shutDownScreen.classList.remove("window--hidden");
+  closeShutDownModal();
   closeStartMenu();
   shutDownSound.play();
   setTimeout(() => {
