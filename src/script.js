@@ -350,12 +350,30 @@ const shutDownModal = document.querySelector(".shut-down--modal");
 const shutDownModalCancel = document.querySelector(".shut-down--cancel-btn");
 const openShutDownModalBtn = document.querySelector(".open-shut-down--modal");
 
+const removeGrayscale = () => {
+  background.style.filter = "grayscale(0)";
+};
+
 const openShutDownModal = () => {
   shutDownModal.classList.remove("window--hidden");
   closeStartMenu();
+  const grayscale = (progress) => {
+    background.style.filter = `grayscale(${progress}%)`;
+  };
+  setTimeout(() => grayscale(10), 500);
+  setTimeout(() => grayscale(20), 750);
+  setTimeout(() => grayscale(30), 1000);
+  setTimeout(() => grayscale(40), 1250);
+  setTimeout(() => grayscale(50), 1500);
+  setTimeout(() => grayscale(60), 1750);
+  setTimeout(() => grayscale(70), 2000);
+  setTimeout(() => grayscale(80), 2250);
+  setTimeout(() => grayscale(90), 2500);
+  setTimeout(() => grayscale(100), 2750);
 };
 
 const closeShutDownModal = () => {
+  removeGrayscale();
   shutDownModal.classList.add("window--hidden");
 };
 
