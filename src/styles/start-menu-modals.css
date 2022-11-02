@@ -63,6 +63,99 @@
 }
 
 /* ******************** */
+/* COMMAND PROMPT MODAL */
+/* ******************** */
+
+.cmd-window {
+  width: 60rem;
+  height: 35rem;
+  border: 3px solid #d2d4cb;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+
+.cmd-window--top {
+  height: 4rem;
+  width: 100%;
+  background: linear-gradient(to right, #0055e0, #3a92ff);
+  border-bottom: 2px solid #d2d4cb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.cmd-content--wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cmd-window--logo {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.cmd-window--top-text {
+  font-size: 2.2rem;
+  color: #fff;
+  font-family: Lucida Console;
+}
+
+.cmd-window--btn-container {
+  margin-right: 0.3rem;
+  display: flex;
+  gap: 0;
+}
+
+.close-cmd-btn {
+  margin-left: 0.2rem;
+}
+
+.cmd-control--btn {
+  height: 2.8rem;
+  width: 2.2rem;
+  font-size: 1.6rem;
+  border-radius: 0;
+  border: 1px solid #aeb6b0;
+  background-color: #ebe9d8;
+}
+
+.cmd-control--btn:hover {
+  background: #bcbaad;
+}
+
+.cmd-window--main {
+  background: #000;
+  width: 100%;
+  height: 88.5%;
+  padding: 0.5rem;
+}
+
+.cmd-window--main-text,
+.cmd-window--main-text--input {
+  color: #c1c1c1;
+  font-size: 1.2rem;
+  font-family: Lucida Console;
+}
+
+.cmd-window--main-text--input {
+  margin-top: 1rem;
+}
+
+.cmd-window--main-text--input::after {
+  content: "_";
+  margin-left: 0.1rem;
+  background: #c1c1c1;
+  animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+/* ******************** */
 /*   MESSENGER WINDOW   */
 /* ******************** */
 

@@ -188,6 +188,26 @@ openNotepadBtn.addEventListener("click", openNotepad);
 
 closeNotepadBtn.addEventListener("click", closeNotepad);
 
+//////////////////////////////////////
+//Opening and closing command prompt
+
+const closeCmdBtn = document.querySelector(".close-cmd-btn");
+const openCmdBtn = document.querySelector(".open-cmd-btn");
+const cmdWindow = document.querySelector(".cmd-window");
+
+const openCmdWindow = () => {
+  cmdWindow.classList.remove("window--hidden");
+  startSound.play();
+  closeStartMenu();
+};
+
+const closeCmdWindow = () => {
+  cmdWindow.classList.add("window--hidden");
+};
+
+openCmdBtn.addEventListener("click", openCmdWindow);
+closeCmdBtn.addEventListener("click", closeCmdWindow);
+
 ////////////////////////////////////////
 // Opening and closing messenger
 
