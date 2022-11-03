@@ -252,6 +252,7 @@ html {
   font-family: "Roboto", sans-serif;
   transition: all 0.3s;
   outline: none;
+  user-select: none;
 }
 
 .start:hover {
@@ -286,9 +287,24 @@ html {
     #1690eb 12% 95%,
     #1690eb 95% 100%
   );
-  width: 10rem;
+  width: 19rem;
   text-shadow: 1px 1px #333;
   border-left: 1px solid #444;
+}
+
+.tray-icon--container {
+  display: flex;
+  gap: 1rem;
+}
+
+.tray-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  user-select: none;
+}
+
+.tray-icon:last-of-type {
+  margin-right: 1.2rem;
 }
 
 /* **************** */
