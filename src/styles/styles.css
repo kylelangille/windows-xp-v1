@@ -307,6 +307,121 @@ html {
   margin-right: 1.2rem;
 }
 
+/* ***************** */
+/* TRAY NOTIFICATION */
+/* ***************** */
+
+.tray-notif {
+  width: 30rem;
+  height: 11rem;
+  border: 1px solid #000;
+  border-radius: 9px;
+  position: relative;
+  background: #ffffdf;
+  margin-top: 10rem;
+  position: absolute;
+  top: 70%;
+  left: 81.5%;
+}
+
+.tray-notif:before,
+.tray-notif:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.9rem;
+  left: 24rem;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border: solid 20px transparent;
+  border-top: 0;
+  border-bottom-color: #ffffdf;
+  transform: rotate(180deg);
+}
+
+.tray-notif:before {
+  bottom: -2.04rem;
+  z-index: 1;
+  border-bottom-color: #000;
+}
+
+.tray-notif-top--container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.tray-notif--icon {
+  width: 2rem;
+  height: 2rem;
+  user-select: none;
+}
+
+.tray-notif--heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: -3rem;
+}
+
+.tray-notif--text {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.close-tray-notif--btn {
+  font-size: 1.4rem;
+  width: 2rem;
+  height: 2.2rem;
+  color: #aa9c8c;
+  background: #ffffec;
+  border-radius: 3px;
+  border: 1px solid #aa9c8c;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.close-tray-notif--btn:hover {
+  background: #ccccbd;
+  color: #f7f5f4;
+}
+
+.window--hidden {
+  display: none;
+}
+
+/* animation */
+
+.tray-notif--animate-opacity {
+  animation: opac 0.8s;
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tray-notif--animate-show {
+  animation: show 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* **************** */
 /* REUSABLE CLASSES */
 /* **************** */
