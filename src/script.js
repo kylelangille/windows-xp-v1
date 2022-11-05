@@ -295,6 +295,7 @@ const startSound = new Audio("../sounds/start.wav");
 const background = document.querySelector(".background");
 const trayNotif = document.getElementById("tray-notif");
 const closeTrayNotifBtn = document.querySelector(".close-tray-notif--btn");
+const dangerTrayicon = document.getElementById("danger-tray--icon");
 
 const bootPC = () => {
   startSound.play();
@@ -325,7 +326,10 @@ const openWindows = () => {
   background.classList.remove("window--hidden");
   startupScreen.classList.add("window--hidden");
   logInSound.play();
-  trayNotif.classList.remove("window--hidden");
+  setTimeout(() => {
+    trayNotif.classList.remove("window--hidden");
+  }, 1000);
+  trayNotif.classList.add("tray-notif--animate-opacity");
 };
 
 closeTrayNotifBtn.addEventListener("click", () => {
@@ -339,10 +343,8 @@ trayNotif.addEventListener("animationend", function () {
   }
 });
 
-trayNotif.addEventListener("click", () => {
-  openErrorModal();
-  errorSound.play();
-  trayNotif.classList.add("tray-notif--animate-show");
+dangerTrayicon.addEventListener("dblclick", () => {
+  trayNotif.style.display = "block";
 });
 
 userProfile.addEventListener("click", openWindows);
