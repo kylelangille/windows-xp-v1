@@ -322,6 +322,7 @@ html {
   position: absolute;
   top: 70%;
   left: 81.5%;
+  user-select: none;
 }
 
 .tray-notif:before,
@@ -358,7 +359,6 @@ html {
 .tray-notif--icon {
   width: 2rem;
   height: 2rem;
-  user-select: none;
 }
 
 .tray-notif--heading {
@@ -492,6 +492,7 @@ html {
   border-top-right-radius: 9px;
   height: 23rem;
   width: 32rem;
+  user-select: none;
 }
 
 .error-modal--top {
@@ -702,6 +703,7 @@ html {
   color: #d8d8d8;
   letter-spacing: 0.5rem;
   font-size: 2rem;
+  user-select: none;
 }
 
 .window--hidden {

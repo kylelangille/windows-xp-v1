@@ -22,8 +22,6 @@ A great deal, and not limited to this list. I'm sure I'll add more as I think of
 
 - Completely re-do the Recycle Bin modal
 
-- Add modal for shutting down or restarting PC
-
 - Add more "functioning" desktop icons
 
 - Reduce length of CSS files by making some more reusable "helper" classes
